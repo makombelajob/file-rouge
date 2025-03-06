@@ -1,12 +1,13 @@
 :root {
-    font-size : 10px;
+    font-size: 10px;
 }
 img {
-    width : 100%;
-    vertical-align : middle;
+    width: 100%;
+    vertical-align: middle;
 }
 header {
     img {
-
-}
+        width : 70px;
+        border-radius: 10px;
+    }
 }
