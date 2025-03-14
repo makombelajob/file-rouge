@@ -9,6 +9,7 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/burger.js" defer ></script>
 		<title>e-school</title>
 	</head>
 	<body>
@@ -22,7 +23,7 @@
 					<button type="submit">🔍</button>
 				</form>
 				<div class="open">
-					<ul class="open">
+					<ul>
 						<li><a href="#">Accueil</a></li>
 						<li><a href="html/catalogue.html">catalogue</a></li>
 						<li><a href="#">Formation</a></li>
@@ -49,29 +50,41 @@
 		<main>
 			<section id="hero">
 				<h1>E-school</h1>
-				<article>
-					<figure>
-						<img src="images/example1.jpeg" alt="Image de l'école">
-						<figcaption>
-							<h2>E-school</h2>
-							<p>Nos actions</p>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/example3.jpeg" alt="Image de l'école">
-						<figcaption>
-							<h2>E-school</h2>
-							<p>Nos actions</p>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/example3.jpeg" alt="Image de l'école">
-						<figcaption>
-							<h2>E-school</h2>
-							<p>Nos actions</p>
-						</figcaption>
-					</figure>
-				</article>
+				<div class="slide">
+					<article class="elements">
+						<figure class="element active">
+							<img src="images/example1.jpeg" alt="Image de l'école">
+							<figcaption class="caption">
+								<h2>E-school</h2>
+								<p>Nos actions</p>
+							</figcaption>
+						</figure>
+						<figure class="element">
+							<img src="images/example3.jpeg" alt="Image de l'école">
+							<figcaption class="caption">
+								<h2>E-school</h2>
+								<p>Nos actions</p>
+							</figcaption>
+						</figure>
+						<figure class="element">
+							<img src="images/example3.jpeg" alt="Image de l'école">
+							<figcaption class="caption">
+								<h2>E-school</h2>
+								<p>Nos actions</p>
+							</figcaption>
+						</figure>
+					</article>
+					<svg id="left" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-left"
+						viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+					</svg>
+					<svg id="right" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-right"
+						viewBox="0 0 16 16">
+						<path fill-rule="evenodd"
+							d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+					</svg>
+				</div>
 			</section>
 			<section id="main">
 				<article>

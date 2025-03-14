@@ -1,12 +1,14 @@
 :root {
     font-size: 10px;
+    --clr-black: black;
+    --clr-white: white;
 }
 img {
     width: 100%;
     vertical-align: middle;
 }
 header {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--clr-black);
     nav {
         margin-block: 1rem;
         display: flex;
@@ -35,6 +37,7 @@ header {
     }
     .open {
         display: none;
+        z-index: 100;
         ul {
             position: absolute;
             top: 0;
@@ -45,13 +48,13 @@ header {
             li {
                 margin: 2rem;
                 a {
-                    color: white;
+                    color: var(--clr-white);
                     text-decoration: none;
                     font-size: 2rem;
                 }
             }
         }
-        button{
+        button {
             position: inherit;
             top: 10px;
             left: 10px;
@@ -67,4 +70,46 @@ header {
     }
 }
 main {
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-block: 1rem;
+    }
+    #hero {
+        .slide {
+            position: relative;
+            margin: 1rem;
+            .elements {
+                .element {
+                    position: relative;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    .caption {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: var(--clr-white);
+                        background-color: rgba(127, 255, 212, 0.336);
+                        padding: 2rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            #left, #right{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+            #left{
+                left: 1rem;
+            }
+            #right{
+                right: 1rem;
+            }
+        }
+    }
 }
