@@ -18,6 +18,9 @@ header {
             button {
                 border: none;
             }
+            input{
+                width: 80%;
+            }
         }
         div {
             width: 100px;
