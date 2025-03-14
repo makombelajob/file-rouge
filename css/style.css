@@ -6,8 +6,34 @@ img {
     vertical-align: middle;
 }
 header {
-    img {
-        width : 70px;
-        border-radius: 10px;
+    margin-block: 1rem;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        form{
+            width: 60%;
+            padding-left: 0.5rem;
+            button {
+                border: none;
+            }
+        }
+        div {
+            width: 100px;
+            text-align: center;
+            img {
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+    }
+    .open {
+        display: none;
+    }
+    #burger{
+        cursor: pointer;
     }
 }
