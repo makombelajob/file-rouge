@@ -7,109 +7,23 @@ img {
     width: 100%;
     vertical-align: middle;
 }
-header {
-    border-bottom: 1px solid var(--clr-black);
-    nav {
-        margin-block: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        form {
-            width: 60%;
-            padding-left: 0.5rem;
-            button {
-                border: none;
-                cursor: pointer;
-            }
-            input {
-                width: 80%;
-            }
-        }
-        div {
-            width: 100px;
-            text-align: center;
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-    .open {
-        display: none;
-        z-index: 100;
-        ul {
+body{
+    header{
+        #menu {
             position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 20%;
-            background-color: rgba(0, 0, 0, 0.678);
-            li {
-                margin: 2rem;
-                a {
-                    color: var(--clr-white);
-                    text-decoration: none;
-                    font-size: 2rem;
-                }
+            top: 60px;
+            right: 20px;
+            background: white;
+            z-index: 100;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            #burger{
+                position: inherit;
+                top: 10px;
+                left: 10px;
             }
         }
-        button {
-            position: inherit;
-            top: 10px;
-            left: 10px;
-            border: none;
-            border-radius: 50%;
-            padding: 0.5rem;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-    }
-    #burger {
-        cursor: pointer;
-    }
-}
-main {
-    h1 {
-        text-align: center;
-        font-size: 2rem;
-        margin-block: 1rem;
-    }
-    #hero {
-        .slide {
-            position: relative;
-            margin: 1rem;
-            .elements {
-                .element {
-                    position: relative;
-                    display: none;
-                    &.active {
-                        display: block;
-                    }
-                    .caption {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        color: var(--clr-white);
-                        background-color: rgba(127, 255, 212, 0.336);
-                        padding: 2rem;
-                        font-size: 2rem;
-                    }
-                }
-            }
-            #left, #right{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                cursor: pointer;
-            }
-            #left{
-                left: 1rem;
-            }
-            #right{
-                right: 1rem;
-            }
-        }
+
     }
 }
