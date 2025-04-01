@@ -10,7 +10,8 @@ closeBtn.addEventListener("click", function() {
     openList.style.display = "none";
 });
 
-document.addEventListener("click", function(e) {
+const body = document.body;
+body.addEventListener("click", function(e) {
     if(!burger.contains(e.target) && !closeBtn.contains(e.target) && !openList.contains(e.target)){
         openList.style.display = "none";
     }

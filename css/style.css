@@ -38,13 +38,14 @@ header {
     .open {
         display: none;
         z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 20%;
+        background-color: rgba(0, 0, 0, 0.678);
         ul {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 20%;
-            background-color: rgba(0, 0, 0, 0.678);
+
             li {
                 margin: 2rem;
                 a {
