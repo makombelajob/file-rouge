@@ -3,6 +3,10 @@
     --clr-black: black;
     --clr-white: white;
     --Primaire:#4767E7;
+    --principal_color : #1128f5; 
+    --second_color: #ebb217;
+    --background:#F9F9F9;
+    --third_color:#2917d0;
 }
 img {
     width: 100%;
@@ -28,9 +32,7 @@ body{
 
     }
 }
-main{
-    display: block;
-}
+
 .T_formation{
     text-align: center;
     color: var(--Primaire);
@@ -43,4 +45,28 @@ main{
     text-align: justify;
     width: 70%;
     margin-inline: auto;
+}
+#formation {
+    font-size: 1.8rem;
+h1 {
+     font-size: 3rem;
+    font-weight: bold;
+    color: var(--principal_color);
+}    
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--third_color);
+}
+summary {
+   color: var(--third_color);
+}
+button {
+    border: none;
+    color : var(--clr-white);
+    background-color: var(--principal_color);
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
 }
