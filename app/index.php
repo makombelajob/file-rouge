@@ -48,9 +48,9 @@
 				</div>
 			</nav>
 		</header>
-		<main>
+		<main class="container">
             <!-- Section du slide  -->
-			<section class="container" id="hero">
+			<section>
 				<div class="row">
 					<h1 class="col-12 text-center fs-1 fw-bolder my-2 text-uppercase">E-school</h1>
 					<div class="carousel slide col-12">
@@ -93,14 +93,17 @@
 			</section>
             
             <!-- Section de la présentation de l'école -->
-			<section class="container" id="main">
-                <h2 class="text-center text-uppercase fs-1 my-3 fw-semibold">🏫 Présentation – eSchool</h2>
-				<div class="row">
+			<section class="row">
+                <h2 class="text-center text-uppercase fs-1 my-3 fw-semibold">🏫 Présentation</h2>
+				<div>
 					<article class="card m-2">
 						<img class="card-img-top" src="assets/example2.jpeg" alt="Image de representation de l'ecole">
 						<div class="card-body">
-							<h2>Votre avenir commence ici, avec eSchool.</h2>
-							<p>Chez eSchool, nous croyons que l’apprentissage doit être accessible, efficace et connecté au monde d’aujourd’hui. C’est pourquoi nous proposons des formations en ligne conçues pour s’adapter à votre rythme, à vos besoins et à vos ambitions. Que vous souhaitiez développer de nouvelles compétences, changer de voie professionnelle ou approfondir vos connaissances, notre équipe d’experts est là pour vous accompagner à chaque étape. Nos cours sont pensés pour être concrets, interactifs et directement applicables dans le monde réel.</p>
+							<h2 class="card-title fs-2 text-center fw-semibold text-uppercase my-3">Votre avenir commence ici, avec eSchool.</h2>
+							<p class="card-content fs-3">Chez <span class="text-uppercase fw-bolder">eSchool</span>, nous croyons que l’apprentissage doit être accessible, efficace et connecté au monde d’aujourd’hui. C’est pourquoi nous proposons des formations en ligne conçues pour s’adapter à votre rythme, à vos besoins et à vos ambitions.
+                            </p>
+                            <p class="card-content fs-3">Que vous souhaitiez développer de nouvelles compétences, changer de voie professionnelle ou approfondir vos connaissances, notre équipe d’experts est là pour vous accompagner à chaque étape.</p>
+                            <p class="card-content fs-3">Nos cours sont pensés pour être concrets, interactifs et directement applicables dans le monde réel.</p>
 							<div class="text-center">
 								<button class="btn btn-primary fs-4">Savoir Plus</button>
 							</div>
@@ -110,41 +113,177 @@
 						
 						<img class="card-img-top" src="assets/example3.jpeg" alt="Image catalogue de l'ecole">
 						<div class="card-body">
-							<h2 class="card-title fs-2">Pourquoi choisir eSchool ?</h2>
-                            <p>eSchool, c’est une équipe dédiée à votre réussite. Nous croyons fermement que l’éducation doit être adaptée aux besoins du monde moderne, tout en restant accessible à tous. Nos programmes de formation sont conçus pour vous aider à évoluer dans votre carrière ou à vous reconvertir, tout en bénéficiant des meilleures ressources pédagogiques.</p>
+							<h2 class="card-title fs-2 text-center fw-semibold text-uppercase my-3">Pourquoi choisir eSchool ?</h2>
+                            <p class="card-content fs-3"><span class="text-uppercase fw-bolder">eSchool</span>, c’est une équipe dédiée à votre réussite. Nous croyons fermement que l’éducation doit être adaptée aux besoins du monde moderne, tout en restant accessible à tous. Nos programmes de formation sont conçus pour vous aider à évoluer dans votre carrière ou à vous reconvertir, tout en bénéficiant des meilleures ressources pédagogiques.</p>
 							<div class="text-center">
 								<button class="btn btn-primary fs-4">Savoir Plus</button>
 							</div>
 						</div>
 					</article>
-					<article class="card m-2">
+					<article class="card m-2 row">
 						<img class="card-img-top" src="assets/example1.jpeg" alt="Image nos valeurs de l'ecole">
-						<div class="card-body">
-							<h2 class="card-title fs-2">Nos valeurs</h2>
-							<p class="card-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-								voluptatem!</p>
+						<div class="card-body col-12">
+							<h2 class="card-title fs-2 text-center fw-semibold text-uppercase my-3">Nos valeurs</h2>
+							<ul class="card-content list-unstyled row">
+                                <li class="fs-3">
+                                    <div class="col-12 my-2">
+                                        <span class=" text-uppercase text-secondary fw-semibold fs-3">Innovation</span>
+                                    </div>
+                                    Nous utilisons les dernières technologies pour rendre votre apprentissage plus interactif.
+                                </li>
+                                <li class="fs-3">
+                                    <div class="col-12 my-2">
+                                        <span class="text-uppercase text-secondary fw-semibold fs-3">Accessibilité</span>
+                                    </div>
+                                    Apprenez à votre rythme, où que vous soyez, avec des cours 100% accéssible en ligne.
+                                </li>
+                                <li class="fs-3">
+                                    <div class="col-12 my-2">
+                                        <span class="text-uppercase text-secondary fw-semibold fs-3">Excellence</span>
+                                    </div>
+                                    Nos formateurs sont des experts dans leur domaine, vous garantissant une formation de qualité.
+                                </li>
+                            </ul>
 							<div class="text-center">
 								<button class="btn btn-primary fs-4">Savoir Plus</button>
 							</div>
 						</div>
 					</article>
-					<article class="card m-2">						
+					<article class="card m-2 row">
 						<img class="card-img-top" src="assets/example2.jpeg" alt="Image representant l'ecole">
 						<div class="card-body">
-							<h2 class="card-title fs-2">Nos partenaires</h2>
-							<p class="card-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-								voluptatem!</p>
-							<div class="text-center">
-								<button class="btn btn-primary fs-4">Savoir Plus</button>
-							</div>
+							<h2 class="card-title fs-2 text-uppercase fw-semibold text-center my-2">Témoignages d’étudiants</h2>
+							<p class="card-text fs-2">"Grâce à eSchool, j’ai réussi ma reconversion professionnelle et j’ai trouvé un emploi dans les 6 mois suivant ma certification !"
+                                <div class="col-12 text-center ">
+                                <span class="fw-semibold fs-2 text-uppercase">Marie, diplômée 2024</span>
+                            </div>
+                            </p>
 						</div>
 					</article>
-
 				</div>
 			</section>
 
             <!-- Section de la présentation des formations -->
-
+            <section>
+                <h2 class="fs-1 text-uppercase text-center fw-semibold my-3">Nos formations Frontend et Backend</h2>
+                <div class="row">
+                    <h3 class="fs-2 fw-semibold my-3 text-primary-emphasis">Formations Frontend</h3>
+                    <h4 class="fs-3 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
+                    <p class="fs-4">Maîtriser les bases du développement web pour créer des sites web interactifs et responsives.</p>
+                    <h5 class="fs-4 text-info-emphasis my-3 text-uppercase fw-semibold">Contenu de la formation</h5>
+                    <article class="card m-2">
+                       <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                           <use xlink:href="assets/sprites.svg#html"></use>
+                       </svg>
+                        <div class="card-body">
+                            <h2 class="card-title fs-1 text-uppercase fw-bolder">HTML (Hypertext Markup Language)</h2>
+                            <ul class="list-unstyled">
+                                <li>Structure de base d'une page web</li>
+                                <li>Balises HTML, éléments de texte, liens, images</li>
+                                <li>Formulaires et formulaires interactifs</li>
+                                <li>SEO de base avec HTML</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card m-2">
+                        <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                            <use xlink:href="assets/sprites.svg#css"></use>
+                        </svg>
+                        <div class="card-body">
+                            <h2 class="card-title fs-1 text-uppercase fw-bolder">CSS (Cascading Style Sheets)</h2>
+                            <ul class="list-unstyled">
+                                <li>Mise en forme des éléments</li>
+                                <li>Layouts (flexbox, grid, etc.)</li>
+                                <li>Responsive et design adaptatif (mobile-first)</li>
+                                <li>Animations et transitions CSS</li>
+                                <li>Préprocesseurs CSS (ex. : Sass ou LESS)</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card m-2">
+                        <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                            <use xlink:href="assets/sprites.svg#js"></use>
+                        </svg>
+                        <div class="card-body">
+                            <h2 class="card-title fs-1 text-uppercase fw-bolder">JavaScript</h2>
+                            <ul class="list-unstyled">
+                                <li>Syntaxe de base, variables, fonctions, boucles</li>
+                                <li>Manipulation du DOM (Document Object Model)</li>
+                                <li>Événements et gestion des interactions utilisateurs</li>
+                                <li>Introduction aux frameworks JavaScript (ex. : React ou Vue.js)</li>
+                                <li>Asynchrone : Promesses et Fetch API</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="row">
+                    <h3 class="fs-2 fw-semibold my-3 text-primary-emphasis">Formations Backend</h3>
+                    <h4 class="fs-3 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
+                    <p class="fs-4">Comprendre, Maîtriser les fondamentaux dans le développement backend</p>
+                    <h5 class="fs-4 text-info-emphasis my-3 text-uppercase fw-semibold">Contenu de la formation</h5>
+                    <article class="card m-2">
+                        <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                            <use xlink:href="assets/sprites.svg#java"></use>
+                        </svg>
+                        <div class="card-body">
+                            <h2 class="card-title fs-1 text-uppercase fw-bolder">Java</h2>
+                            <ul>
+                                <li>Introduction à Java </li>
+                                <li>Programmation orientée objet (POO)</li>
+                                <li>Spring Framework</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card m-2">
+                        <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                            <use xlink:href="assets/sprites.svg#python"></use>
+                        </svg>
+                        <div class="card-body">
+                            <h2 class="card-title fs-1 text-uppercase fw-bolder">Python</h2>
+                            <ul>
+                                <li>Python de base</li>
+                                <li>Frameworks Python pour le développement web</li>
+                                <li>Bibliothèques Python pour le traitement des données</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card m-2">
+                        <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                            <use xlink:href="assets/sprites.svg#php"></use>
+                        </svg>
+                        <div class="card-body">
+                            <h2 class="card-title fs-1 text-uppercase fw-bolder">Php de base</h2>
+                            <ul>
+                                <li>PHP de base</li>
+                                <li>Bases de données avec PHP et MySQL</li>
+                                <li>Frameworks PHP</li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Section nos équipes -->
+            <section>
+                <h2>Notre équipe</h2>
+            </section>
             <!-- Section de contact -->
 			<section class="container mt-5" id="contact">
 				<div class="row">
