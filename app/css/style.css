@@ -2,6 +2,7 @@
     font-size: 10px;
     --clr-black: black;
     --clr-white: white;
+    --Primaire:#4767E7;
 }
 img {
     width: 100%;
@@ -26,4 +27,20 @@ body{
         }
 
     }
+}
+main{
+    display: block;
+}
+.T_formation{
+    text-align: center;
+    color: var(--Primaire);
+    font-weight: 700;
+}
+.P_formation{
+    margin-block: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 70%;
+    margin-inline: auto;
 }
