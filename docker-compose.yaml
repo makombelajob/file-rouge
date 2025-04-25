@@ -15,7 +15,7 @@ services:
         image: mysql:8.0
         container_name: eSchool_my
         environment:
-            MYSQL_ROOT_PASSWORD: admin77911
+            MYSQL_ROOT_PASSWORD: adminGroup4
             MYSQL_DATABASE: eSchool
             MYSQL_USER: admin
             MYSQL_PASSWORD: admin7791
