@@ -35,29 +35,6 @@ services:
         depends_on:
             -   mysql
     
-    postgresql:
-        image: bitnami/postgresql
-        container_name: file-rouge_psql
-        environment:
-            POSTGRES_USER: user
-            POSTGRES_PASSWORD: password
-            POSTGRES_DB: sondageRdc
-        ports:
-            - "5432:5432"
-        volumes:
-            - ./postgres:/bitnami/postgresql
-    
-    pgadmin:
-        image: dpage/pgadmin4
-        container_name: pgadmin
-        environment:
-            PGADMIN_DEFAULT_EMAIL: admin@eschool.fr
-            PGADMIN_DEFAULT_PASSWORD: admin4Group4
-        ports:
-            -   "8082:80"
-        depends_on:
-            -   postgresql
-    
     mail_hog:
         image: mailhog/mailhog
         logging:

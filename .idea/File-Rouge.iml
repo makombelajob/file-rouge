@@ -17,6 +17,7 @@
       <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_twophase" />
       <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_wal/archive_status" />
       <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_wal/summaries" />
+      <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_stat" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
