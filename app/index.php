@@ -14,7 +14,7 @@
 		<header class="container py-3">
 			<nav class="row d-flex align-items-center">
 				<div class="col-1 w-25">
-					<a href="index.html"><img src="images/LogoCrop.png" alt="logo de e-school"></a>
+					<a href="index.html"><img src="assets/LogoCrop.png" alt="logo de e-school"></a>
 				</div>
 				<form class="flex-grow-1 d-flex col-6">
 					<input class="form-control" type="text" name="search" placeholder="Recherche...">
@@ -55,21 +55,21 @@
 					<div class="carousel slide col-12">
 						<article class="carousel-inner">
 							<figure class="carousel-item active">
-								<img class="d-block w-100" src="images/example1.jpeg" alt="Image de l'école">
+								<img class="d-block w-100" src="assets/example1.jpeg" alt="Image de l'école">
 								<figcaption class="carousel-caption">
 									<h2 class="fs-1">E-school</h2>
 									<p>Nos actions</p>
 								</figcaption>
 							</figure>
 							<figure class="carousel-item">
-								<img class="d-block w-100" src="images/example2.jpeg" alt="Image de l'école">
+								<img class="d-block w-100" src="assets/example2.jpeg" alt="Image de l'école">
 								<figcaption class="carousel-caption d-none d-md-block">
 									<h2 class="fs-1">E-school</h2>
 									<p>Nos actions</p>
 								</figcaption>
 							</figure>
 							<figure class="carousel-item">
-								<img class="d-block w-100" src="images/example3.jpeg" alt="Image de l'école">
+								<img class="d-block w-100" src="assets/example3.jpeg" alt="Image de l'école">
 								<figcaption class="carousel-caption">
 									<h2 class="fs-1">E-school</h2>
 									<p>Nos actions</p>
@@ -93,7 +93,7 @@
 			<section class="container" id="main">
 				<div class="row">
 					<article class="card m-2">
-						<img class="card-img-top" src="images/example2.jpeg" alt="Image de representation de l'ecole">
+						<img class="card-img-top" src="assets/example2.jpeg" alt="Image de representation de l'ecole">
 						<div class="card-body">
 							<h2>Presentation</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
@@ -105,7 +105,7 @@
 					</article>
 					<article class="card m-2">
 						
-						<img class="card-img-top" src="images/example3.jpeg" alt="Image catalogue de l'ecole">
+						<img class="card-img-top" src="assets/example3.jpeg" alt="Image catalogue de l'ecole">
 						<div class="card-body">
 							<h2 class="card-title fs-2">Catalogue de Formations</h2>
 							<p class="card-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
@@ -116,7 +116,7 @@
 						</div>
 					</article>
 					<article class="card m-2">
-						<img class="card-img-top" src="images/example1.jpeg" alt="Image nos valeurs de l'ecole">
+						<img class="card-img-top" src="assets/example1.jpeg" alt="Image nos valeurs de l'ecole">
 						<div class="card-body">
 							<h2 class="card-title fs-2">Nos valeurs</h2>
 							<p class="card-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
@@ -127,7 +127,7 @@
 						</div>
 					</article>
 					<article class="card m-2">						
-						<img class="card-img-top" src="images/example2.jpeg" alt="Image representant l'ecole">
+						<img class="card-img-top" src="assets/example2.jpeg" alt="Image representant l'ecole">
 						<div class="card-body">
 							<h2 class="card-title fs-2">Nos partenaires</h2>
 							<p class="card-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
