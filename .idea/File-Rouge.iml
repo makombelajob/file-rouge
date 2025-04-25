@@ -18,6 +18,10 @@
       <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_wal/archive_status" />
       <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_wal/summaries" />
       <excludeFolder url="file://$MODULE_DIR$/postgres/data/pg_stat" />
+      <excludeFolder url="file://$MODULE_DIR$/mysql/#innodb_redo" />
+      <excludeFolder url="file://$MODULE_DIR$/mysql/mysql" />
+      <excludeFolder url="file://$MODULE_DIR$/mysql/performance_schema" />
+      <excludeFolder url="file://$MODULE_DIR$/mysql/sys" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
