@@ -49,6 +49,7 @@
 			</nav>
 		</header>
 		<main>
+            <!-- Section du slide  -->
 			<section class="container" id="hero">
 				<div class="row">
 					<h1 class="col-12 text-center fs-1 fw-bolder my-2 text-uppercase">E-school</h1>
@@ -90,14 +91,16 @@
 					</div>
 				</div>
 			</section>
+            
+            <!-- Section de la présentation de l'école -->
 			<section class="container" id="main">
+                <h2 class="text-center text-uppercase fs-1 my-3 fw-semibold">🏫 Présentation – eSchool</h2>
 				<div class="row">
 					<article class="card m-2">
 						<img class="card-img-top" src="assets/example2.jpeg" alt="Image de representation de l'ecole">
 						<div class="card-body">
-							<h2>Presentation</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-								voluptatem!</p>
+							<h2>Votre avenir commence ici, avec eSchool.</h2>
+							<p>Chez eSchool, nous croyons que l’apprentissage doit être accessible, efficace et connecté au monde d’aujourd’hui. C’est pourquoi nous proposons des formations en ligne conçues pour s’adapter à votre rythme, à vos besoins et à vos ambitions. Que vous souhaitiez développer de nouvelles compétences, changer de voie professionnelle ou approfondir vos connaissances, notre équipe d’experts est là pour vous accompagner à chaque étape. Nos cours sont pensés pour être concrets, interactifs et directement applicables dans le monde réel.</p>
 							<div class="text-center">
 								<button class="btn btn-primary fs-4">Savoir Plus</button>
 							</div>
@@ -107,9 +110,8 @@
 						
 						<img class="card-img-top" src="assets/example3.jpeg" alt="Image catalogue de l'ecole">
 						<div class="card-body">
-							<h2 class="card-title fs-2">Catalogue de Formations</h2>
-							<p class="card-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-								voluptatem!</p>
+							<h2 class="card-title fs-2">Pourquoi choisir eSchool ?</h2>
+                            <p>eSchool, c’est une équipe dédiée à votre réussite. Nous croyons fermement que l’éducation doit être adaptée aux besoins du monde moderne, tout en restant accessible à tous. Nos programmes de formation sont conçus pour vous aider à évoluer dans votre carrière ou à vous reconvertir, tout en bénéficiant des meilleures ressources pédagogiques.</p>
 							<div class="text-center">
 								<button class="btn btn-primary fs-4">Savoir Plus</button>
 							</div>
@@ -140,6 +142,10 @@
 
 				</div>
 			</section>
+
+            <!-- Section de la présentation des formations -->
+
+            <!-- Section de contact -->
 			<section class="container mt-5" id="contact">
 				<div class="row">
 					<div class="col-12 text-center">
