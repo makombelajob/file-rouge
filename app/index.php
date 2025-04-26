@@ -167,10 +167,10 @@
             <section>
                 <h2 class="fs-1 text-uppercase text-center fw-semibold my-3">Nos formations Frontend et Backend</h2>
                 <div class="row">
-                    <h3 class="fs-2 fw-semibold my-3 text-primary-emphasis">Formations Frontend</h3>
+                    <h3 class="fs-2 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations Frontend</h3>
                     <h4 class="fs-3 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
                     <p class="fs-4">Maîtriser les bases du développement web pour créer des sites web interactifs et responsives.</p>
-                    <h5 class="fs-4 text-info-emphasis my-3 text-uppercase fw-semibold">Contenu de la formation</h5>
+                    <h5 class="fs-4 text-info-emphasis my-3 fw-semibold">Contenu de la formation</h5>
                     <article class="card m-2">
                        <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
                            <use xlink:href="assets/sprites.svg#html"></use>
@@ -178,10 +178,10 @@
                         <div class="card-body">
                             <h2 class="card-title fs-1 text-uppercase fw-bolder">HTML (Hypertext Markup Language)</h2>
                             <ul class="list-unstyled">
-                                <li>Structure de base d'une page web</li>
-                                <li>Balises HTML, éléments de texte, liens, images</li>
-                                <li>Formulaires et formulaires interactifs</li>
-                                <li>SEO de base avec HTML</li>
+                                <li class="fs-2 text-secondary-emphasis">Structure de base d'une page web</li>
+                                <li class="fs-2 text-secondary-emphasis">Balises HTML, éléments de texte, liens, images</li>
+                                <li class="fs-2 text-secondary-emphasis">Formulaires et formulaires interactifs</li>
+                                <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
                             </ul>
                             <div class="text-center">
                                 <button class="btn btn-primary fs-4">Savoir Plus</button>
@@ -195,11 +195,11 @@
                         <div class="card-body">
                             <h2 class="card-title fs-1 text-uppercase fw-bolder">CSS (Cascading Style Sheets)</h2>
                             <ul class="list-unstyled">
-                                <li>Mise en forme des éléments</li>
-                                <li>Layouts (flexbox, grid, etc.)</li>
-                                <li>Responsive et design adaptatif (mobile-first)</li>
-                                <li>Animations et transitions CSS</li>
-                                <li>Préprocesseurs CSS (ex. : Sass ou LESS)</li>
+                                <li class="fs-2 text-secondary-emphasis">Mise en forme des éléments</li>
+                                <li class="fs-2 text-secondary-emphasis">Layouts (flexbox, grid, etc.)</li>
+                                <li class="fs-2 text-secondary-emphasis">Responsive et design adaptatif (mobile-first)</li>
+                                <li class="fs-2 text-secondary-emphasis">Animations et transitions CSS</li>
+                                <li class="fs-2 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
                             </ul>
                             <div class="text-center">
                                 <button class="btn btn-primary fs-4">Savoir Plus</button>
@@ -213,10 +213,10 @@
                         <div class="card-body">
                             <h2 class="card-title fs-1 text-uppercase fw-bolder">JavaScript</h2>
                             <ul class="list-unstyled">
-                                <li>Syntaxe de base, variables, fonctions, boucles</li>
-                                <li>Manipulation du DOM (Document Object Model)</li>
-                                <li>Événements et gestion des interactions utilisateurs</li>
-                                <li>Introduction aux frameworks JavaScript (ex. : React ou Vue.js)</li>
+                                <li class="fs-2 text-secondary-emphasis">Syntaxe de base, variables, fonctions, boucles</li>
+                                <li class="fs-2 text-secondary-emphasis">Manipulation du DOM (Document Object Model)</li>
+                                <li class="fs-2 text-secondary-emphasis">Événements et gestion des interactions utilisateurs</li>
+                                <li class="fs-2 text-secondary-emphasis">Introduction aux frameworks JavaScript (ex. : React ou Vue.js)</li>
                                 <li>Asynchrone : Promesses et Fetch API</li>
                             </ul>
                             <div class="text-center">
@@ -226,20 +226,20 @@
                     </article>
                 </div>
                 <div class="row">
-                    <h3 class="fs-2 fw-semibold my-3 text-primary-emphasis">Formations Backend</h3>
+                    <h3 class="fs-2 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations Backend</h3>
                     <h4 class="fs-3 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
                     <p class="fs-4">Comprendre, Maîtriser les fondamentaux dans le développement backend</p>
-                    <h5 class="fs-4 text-info-emphasis my-3 text-uppercase fw-semibold">Contenu de la formation</h5>
+                    <h5 class="fs-4 text-info-emphasis my-3 fw-semibold">Contenu de la formation</h5>
                     <article class="card m-2">
                         <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
                             <use xlink:href="assets/sprites.svg#java"></use>
                         </svg>
                         <div class="card-body">
                             <h2 class="card-title fs-1 text-uppercase fw-bolder">Java</h2>
-                            <ul>
-                                <li>Introduction à Java </li>
-                                <li>Programmation orientée objet (POO)</li>
-                                <li>Spring Framework</li>
+                            <ul class="list-unstyled">
+                                <li class="fs-2 text-secondary-emphasis">Introduction à Java </li>
+                                <li class="fs-2 text-secondary-emphasis">Programmation orientée objet (POO)</li>
+                                <li class="fs-2 text-secondary-emphasis">Spring Framework</li>
                             </ul>
                             <div class="text-center">
                                 <button class="btn btn-primary fs-4">Savoir Plus</button>
@@ -252,10 +252,10 @@
                         </svg>
                         <div class="card-body">
                             <h2 class="card-title fs-1 text-uppercase fw-bolder">Python</h2>
-                            <ul>
-                                <li>Python de base</li>
-                                <li>Frameworks Python pour le développement web</li>
-                                <li>Bibliothèques Python pour le traitement des données</li>
+                            <ul class="list-unstyled">
+                                <li class="fs-2 text-secondary-emphasis">Python de base</li>
+                                <li class="fs-2 text-secondary-emphasis">Frameworks Python pour le développement web</li>
+                                <li class="fs-2 text-secondary-emphasis">Bibliothèques Python pour le traitement des données</li>
                             </ul>
                             <div class="text-center">
                                 <button class="btn btn-primary fs-4">Savoir Plus</button>
@@ -268,10 +268,10 @@
                         </svg>
                         <div class="card-body">
                             <h2 class="card-title fs-1 text-uppercase fw-bolder">Php de base</h2>
-                            <ul>
-                                <li>PHP de base</li>
-                                <li>Bases de données avec PHP et MySQL</li>
-                                <li>Frameworks PHP</li>
+                            <ul class="list-unstyled">
+                                <li class="fs-2 text-secondary-emphasis">PHP de base</li>
+                                <li class="fs-2 text-secondary-emphasis">Bases de données avec PHP et MySQL</li>
+                                <li class="fs-2 text-secondary-emphasis">Frameworks PHP</li>
                             </ul>
                             <div class="text-center">
                                 <button class="btn btn-primary fs-4">Savoir Plus</button>
@@ -280,15 +280,27 @@
                     </article>
                 </div>
             </section>
-            <!-- Section nos équipes -->
-            <section>
-                <h2>Notre équipe</h2>
+            <!-- Section géolocalisation -->
+            <section class="row">
+                <h2 class="fs-1 text-uppercase text-center fw-semibold my-3">Notre Localisation</h2>
+                <div class="w-100 m-auto">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999906318043!2d2.293308315674779!3d48.85837007928774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc7f5f3406f%3A0xa17b6e9c1613b9b!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1714123456789!5m2!1sfr!2sfr"
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
             </section>
             <!-- Section de contact -->
 			<section class="container mt-5" id="contact">
 				<div class="row">
 					<div class="col-12 text-center">
-						<h2 class="fs-1 fw-bolder text-uppercase">Contactez-Nous</h2>
+						<h2 class="fs-1 text-uppercase text-center fw-semibold my-4">Contactez-Nous</h2>
 					</div>
 					<form action>
 						<div class="mb-3">
@@ -313,15 +325,21 @@
 					</form>
 				</div>
 			</section>
+            <div class="">
+                <a href="#" class="position-fixed bottom-0 end-0 m-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="lightblue" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                    </svg>
+                </a>
+            </div>
 		</main>
 		<footer class="container mt-5 bg-secondary py-5">
 			<div class="row">
-				<svg class="col-3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
-					 height="30" viewBox="0 0 48 48">
-					<path fill="#039be5"
-						  d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
-					<path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
-				</svg>
+                <svg class="col-3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                     height="30" viewBox="0 0 48 48">
+                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+                    <path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                </svg>
 				<svg class="col-3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
 					 height="30" viewBox="0 0 48 48">
 					<path fill="#0288D1"
