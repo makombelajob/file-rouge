@@ -1,118 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/singUp.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div>
-                <img src="../images/LogoCrop.png" alt="logo de e-school">
-            </div>
-            <form>
-                <input type="text" name="search" placeholder="Recherche...">
-                <button type="submit">🔍</button>
+<?php include_once 'includes/header.php';?>
+    <main class="container">
+        <div class="row">
+            <h1 class="text-center text-uppercase fs-1 fw-bolder my-3">Inscription</h1>
+            <form action="" method="post">
+                <div class="email">
+                    <label class="form-label fs-1 my-3 fw-semibold" for="email">Email</label>
+                    <input class="form-control fs-2" type="email" name="email" id="email"/>
+                </div>
+                <div class="lastname">
+                    <label class="form-label fs-1 my-3 fw-semibold" for="lastname">Nom</label>
+                    <input class="form-control fs-2" type="text" name="lastname" id="lastname"/>
+                </div>
+                <div class="firstname">
+                    <label class="form-label fs-1 my-3 fw-semibold" for="firstname">Firstname</label>
+                    <input class="form-control fs-2" type="text" name="firstname" id="firstname"/>
+                </div>
+                <div class="passwd">
+                    <label class="form-label fs-1 my-3 fw-semibold" for="passwd">Mots de passe</label>
+                    <input class="form-control fs-2" type="password" name="passwd" id="passwd"/>
+                </div>
+                <div class="passwdConfirm">
+                    <label class="form-label fs-1 my-3 fw-semibold" for="passwdConfirm">Confirmer le mot de passe</label>
+                    <input class="form-control fs-2" type="password" name="passwdConfirm" id="passwdConfirm"/>
+                </div>
+                <div class="btn-group my-3 w-100" role="group" aria-label="Basic checkbox toggle button group">
+                    <input class="btn-check" type="checkbox" name="rgpd" id="rgpd" autocomplete="off"/>
+                    <label class="btn btn-outline-primary fs-2" for="rgpd">J'acceptes les conditions d'utilisations</label>
+                </div>
+                <div class="text-center my-3">
+                    <button class="btn btn-primary fs-1" type="submit">Inscription</button>
+                </div>
             </form>
-            <div class="open">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="html/catalogue.html">catalogue</a></li>
-                    <li><a href="html/formation.html">Formation</a></li>
-                    <li><a href="html/login.html">Login</a></li>
-                    <li><a href="html/signup.html">Signup</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <button id="close">X</button>
-                </ul>
-            </div>
-            <div id="burger">
-                <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5" y="5" width="40" height="40" rx="8" ry="8" fill="white" />
-                    <line x1="15" y1="18" x2="35" y2="18" stroke="black" stroke-width="3" stroke-linecap="round" />
-                    <line x1="15" y1="25" x2="35" y2="25" stroke="black" stroke-width="3" stroke-linecap="round" />
-                    <line x1="15" y1="32" x2="35" y2="32" stroke="black" stroke-width="3" stroke-linecap="round" />
-                </svg>
-            </div>
-        </nav>
-    </header>
-    <!DOCTYPE html>
-    <html lang="fr">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulaire d'Inscription</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Ton CSS personnalisé -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body>
-        <main>
-            <!-----------------Section4 SignUp-------------------->
-            <section class="signup-section">
-                <!-----------------Section4 Email--------------------->
-                <div id="email" class="container">
-                    <article class="row">
-                        <div class="col-12">
-                            <label for="email">E-mail :</label>
-                            <input type="email" id="email" name="email" placeholder="exemple@domaine.com"
-                                class="form-control">
-                        </div>
-                    </article>
-                </div>
-                <!-----------------Section4 Nom-------------------->
-                <div id="nom" class="container">
-                    <article class="row">
-                        <div class="col-12 col-md-6 px-3">
-                            <label for="nom">Nom :</label>
-                            <input type="text" id="nom" name="nom" placeholder="Dupont" class="form-control">
-                        </div>
-                    </article>
-                </div>
-                <!------------------------Section4 Mot de passe-------------------->
-                <div id="mdp" class="container">
-                    <article class="row">
-                        <div class="col-12 col-md-6 px-3">
-                            <label for="mdp">Mot de passe :</label>
-                            <input type="password" id="mdp" name="mdp"
-                                placeholder="Doit contenir 1 majuscule, un chiffre et un symbole @#$%"
-                                class="form-control">
-                        </div>
-                    </article>
-                </div>
-                <!-----------------Section4 J'accepte les conditions----------------->
-                <div class="conditions" style="background-color: #d3d3d3; padding: 10px;">
-                    <label>
-                        <input type="checkbox"> J'accepte la collecte de mes données personnelles
-                    </label>
-                </div>
-            </section>
-            <!-----------------------S'enregistrer Button----------------------->
-            <section id="sEnregistrer" class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <button class="btn">S'enregistrer</button>
-                    </div>
-                </div>
-            </section>
-            <!-----Page se connecter (pour ceux qui ont déjà un compte)---------->
-            <section id="seConnecter">
-                <div>
-                    <p>J'ai déjà un compte</p>
-                    <button class="btn"><a href="login.php">Se connecter</a></button>
-                </div>
-            </section>
-            <footer></footer>
-        </main>
-        <!-- Bootstrap JS -->
-
-    </body>
-
-    </html>
+        </div>
+    </main>
+<?php include_once 'includes/footer.php';?>

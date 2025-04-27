@@ -71,7 +71,7 @@
 		
 
 		<section class="container mt-4"  >
-			<h2>
+			<h2  class="p-2">
 				Présentation de la formation
 			</h2>
 			<p>Notre formation en développement HTML couvre les concepts fondamentaux tels que les balises, la structure
