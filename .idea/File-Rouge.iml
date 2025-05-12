@@ -22,6 +22,8 @@
       <excludeFolder url="file://$MODULE_DIR$/mysql/mysql" />
       <excludeFolder url="file://$MODULE_DIR$/mysql/performance_schema" />
       <excludeFolder url="file://$MODULE_DIR$/mysql/sys" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/mysql" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -13,16 +13,20 @@
 <body>
 <header class="container py-3">
     <nav class="row d-flex align-items-center">
-        <div class="col-1 w-25 col-lg-1 m-auto">
+        <div class="col-1 w-25 col-lg-1">
             <a href="index.php"><img src="assets/LogoCrop.png" alt="logo de e-school"></a>
         </div>
-        <form class="flex-grow-1 d-flex col-6 col-lg-8">
-            <label class="flex-grow-1 me-2 w-100">
-                <input class="form-control w-100 fs-4" type="text" name="search" placeholder="Recherche..."/>
-            </label>
-            <button class="btn btn-primary cursor-pointer" type="submit">🔍</button>
-        </form>
-
+        <div class="d-none d-lg-flex">
+            <?php include_once 'optionsList.php';?>
+        </div>
+        <div class="col-12 col-lg-4">
+            <form class="flex-grow-1 d-flex col-6">
+                <label class="flex-grow-1 me-2 w-100">
+                    <input class="form-control w-100 fs-4" type="text" name="search" placeholder="Recherche..."/>
+                </label>
+                <button class="btn btn-primary cursor-pointer" type="submit">🔍</button>
+            </form>
+        </div>
         <div class="col-auto">
             <button id="burger" class="btn border-0 bg-transparent cursor-pointer d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <svg class="" width="50" height="50" viewBox="0 0 50 50"
@@ -37,7 +41,7 @@
                 </svg>
             </button>
         </div>
-        <div class="col-12 col-lg-12">
+        <div class="col-12 d-lg-none">
             <div class="w-75 w-lg-auto my-lg-5 collapse collapse-horizontal my-3 d-lg-flex justify-content-center col-lg" id="menu">
                 <ul class="list-unstyled text-center d-flex flex-column flex-lg-row text-center shadow align-items-center justify-content-center gap-4 w-100">
                     <li><a class="text-decoration-none fs-2 text-secondary" href="index.php">Accueil</a></li>

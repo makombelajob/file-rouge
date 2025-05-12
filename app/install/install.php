@@ -36,7 +36,7 @@ function createTable($pdo){
             email VARCHAR(250) NOT NULL UNIQUE,
             passwd VARCHAR(30) NOT NULL,
             id_role INT NOT NULL,
-            FOREIGN KEY (id_role) REFERENCES Role(id);
+            FOREIGN KEY (id_role) REFERENCES Role(id)
         )",
         "CREATE TABLE IF NOT EXISTS Order(
             id INT AUTO_INCREMENT PRIMARY KEY,
