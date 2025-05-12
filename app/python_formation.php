@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation Python vous apprendra à coder en Python pour des applications variées telles que le développement web, l'analyse de données, l'automatisation des tâches et bien plus.</p>
 
@@ -98,9 +98,9 @@
                     <p>Apprenez à automatiser des tâches répétitives avec Python pour rendre vos processus plus efficaces.</p>
                 </details>
             </div>
-        </section>
+        </div>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Les prérequis de la formation</h2>
             <ul>
                 <li>Aucune connaissance préalable en programmation n'est requise.</li>
@@ -108,9 +108,9 @@
                 <li>Un ordinateur avec Python installé (instructions fournies dans la formation).</li>
             </ul>
             <p>Cette formation est accessible à tous, débutants ou personnes cherchant à approfondir leurs compétences en programmation Python.</p>
-        </section>
+        </div>
 
-        <section class="container mt-4 p-2 shadow-sm">
+        <div class="container mt-4 p-2 shadow-sm">
             <h2 class="p-2">Le Formateur</h2>
             <p>Notre formation est animée par [Nom du Formateur], un expert Python avec plus de 10 ans d'expérience dans le développement d'applications variées et l'analyse de données. Vous serez accompagné tout au long de la formation pour garantir une progression optimale.</p>
 
@@ -119,7 +119,7 @@
                 <li>Explication claire et détaillée des concepts Python.</li>
                 <li>Support continu et sessions de questions-réponses pour répondre à vos besoins spécifiques.</li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">

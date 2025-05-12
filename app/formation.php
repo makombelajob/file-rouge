@@ -74,16 +74,10 @@
 					</div>
 				</div>
 		</section>
-
-<<<<<<< HEAD:app/html_formation.php
-		<section class="container mt-4 shadow-sm">
-			<h2 class="p-2">Présentation de la formation</h2>
-=======
 		<section class="container mt-4"  >
 			<h2  class="p-2">
 				Présentation de la formation
 			</h2>
->>>>>>> fd3da87678fb3feae4dac6731e0a0cc0c5b8fb12:app/formation.php
 			<p>Notre formation en développement HTML couvre les concepts fondamentaux tels que les balises, la structure
 				d'une page web, l'intégration de médias et bien plus. Ce parcours est pensé pour les débutants ou ceux
 				qui souhaitent renforcer leurs bases.</p>

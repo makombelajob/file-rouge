@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation en JavaScript vous apprendra à rendre vos pages web dynamiques et interactives avec l'utilisation des dernières techniques JavaScript.</p>
 
@@ -98,9 +98,9 @@
                     <p>Comprenez les mécanismes des promesses, des async/await, et comment gérer les opérations asynchrones dans votre code.</p>
                 </details>
             </div>
-        </section>
+        </div>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Les prérequis de la formation</h2>
             <ul>
                 <li>Aucune connaissance préalable n'est requise, on part de zéro !</li>
@@ -109,9 +109,9 @@
                 <li>Un éditeur de texte comme Visual Studio Code</li>
             </ul>
             <p>C'est tout !</p>
-        </section>
+        </div>
 
-        <section class="container mt-4 p-2 shadow-sm">
+        <div class="container mt-4 p-2 shadow-sm">
             <h2 class="p-2">Le Formateur</h2>
             <p>Notre formation est animée par [Nom du Formateur], expert en JavaScript avec plus de 10 ans d'expérience dans le développement d'applications web modernes. Son approche pédagogique est centrée sur :</p>
 
@@ -120,7 +120,7 @@
                 <li>La Simplicité : Des explications claires, accessibles aux débutants.</li>
                 <li>L'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">

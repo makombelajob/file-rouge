@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation en CSS vous apprendra à styliser vos pages web de manière professionnelle en utilisant les dernières techniques et propriétés CSS.</p>
 
@@ -98,9 +98,9 @@
                     <p>Apprenez à ajouter des animations et des transitions pour rendre votre site web interactif et dynamique.</p>
                 </details>
             </div>
-        </section>
+        </div>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Les prérequis de la formation</h2>
             <ul>
                 <li>Aucune connaissance préalable n'est requise, on part de zéro !</li>
@@ -109,9 +109,9 @@
                 <li>Un éditeur de texte comme Visual Studio Code</li>
             </ul>
             <p>C'est tout !</p>
-        </section>
+        </div>
 
-        <section class="container mt-4 p-2 shadow-sm">
+        <div class="container mt-4 p-2 shadow-sm">
             <h2 class="p-2">Le Formateur</h2>
             <p>Notre formation est animée par [Nom du Formateur], expert en CSS avec plus de 10 ans d'expérience dans la création de sites web modernes et performants. Son approche pédagogique est centrée sur :</p>
 
@@ -120,7 +120,7 @@
                 <li>La Simplicité : Des explications claires, accessibles aux débutants.</li>
                 <li>L'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">

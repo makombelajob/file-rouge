@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation PHP vous apprendra à créer des applications web dynamiques, en utilisant le PHP pour interagir avec des bases de données, gérer les formulaires, et gérer les sessions utilisateurs.</p>
 
@@ -98,9 +98,9 @@
                     <p>Comprenez les mécanismes des sessions PHP pour gérer les utilisateurs et la sécurité des applications web.</p>
                 </details>
             </div>
-        </section>
+        </div>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Les prérequis de la formation</h2>
             <ul>
                 <li>Aucune connaissance préalable n'est requise, nous couvrons les bases !</li>
@@ -108,9 +108,9 @@
                 <li>Avoir un ordinateur Windows, Mac OS ou Linux avec un serveur local (comme XAMPP ou WAMP).</li>
             </ul>
             <p>Les notions de base en HTML et CSS sont un plus mais ne sont pas indispensables pour suivre cette formation.</p>
-        </section>
+        </div>
 
-        <section class="container mt-4 p-2 shadow-sm">
+        <div class="container mt-4 p-2 shadow-sm">
             <h2 class="p-2">Le Formateur</h2>
             <p>Notre formation est animée par [Nom du Formateur], expert PHP avec plus de 10 ans d'expérience dans le développement d'applications web complexes. Il vous guidera pas à pas à travers chaque concept de la formation, de l'introduction au PHP à la gestion des bases de données et de la sécurité des applications.</p>
 
@@ -119,7 +119,7 @@
                 <li>Explication claire et détaillée des concepts PHP.</li>
                 <li>Support continu et sessions de questions-réponses pour répondre à vos besoins spécifiques.</li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">

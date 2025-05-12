@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation en Java vous apprendra à créer des applications logicielles avec un code propre et bien structuré. Vous apprendrez à utiliser les concepts clés du langage Java pour le développement d'applications web et mobiles.</p>
 
@@ -98,9 +98,9 @@
                     <p>Découvrez comment créer des applications web avec Java EE (Enterprise Edition) et intégrer des bases de données.</p>
                 </details>
             </div>
-        </section>
+        </div>
 
-        <section class="container mt-4 shadow-sm">
+        <div class="container mt-4 shadow-sm">
             <h2 class="p-2">Les prérequis de la formation</h2>
             <ul>
                 <li>Aucune connaissance préalable n'est requise, nous commençons par les bases du Java !</li>
@@ -109,9 +109,9 @@
                 <li>Un éditeur de texte comme IntelliJ IDEA ou Eclipse.</li>
             </ul>
             <p>C'est tout !</p>
-        </section>
+        </div>
 
-        <section class="container mt-4 p-2 shadow-sm">
+        <div class="container mt-4 p-2 shadow-sm">
             <h2 class="p-2">Le Formateur</h2>
             <p>Notre formation est animée par [Nom du Formateur], expert en Java avec plus de 15 ans d'expérience dans le développement d'applications. Son approche pédagogique est centrée sur :</p>
 
@@ -120,7 +120,7 @@
                 <li>La Simplicité : Des explications claires, accessibles aux débutants en programmation.</li>
                 <li>L'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">
