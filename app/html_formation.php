@@ -66,6 +66,7 @@
 						<li class="list-group-item">Langues : Français</li>
 						<li class="list-group-item">Contenu : 34 exercices interactifs</li>
 						<li class="list-group-item">Accès : Mobile & PC</li>
+						<li class="list-group-item">Prix : 200 euros</li>
 						<li class="list-group-item">Certification incluse</li>
 					</ul>
 					<div class="pt-4 mb-4">
