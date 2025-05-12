@@ -31,6 +31,7 @@ body{
         }
 
     }
+<<<<<<< HEAD
 }
 
 .T_formation{
@@ -69,4 +70,11 @@ button {
     padding: 1rem;
     font-size: 1.8rem;
 }
+=======
+    main{
+        #up{
+            fill : red;
+        }
+    }
+>>>>>>> fd3da87678fb3feae4dac6731e0a0cc0c5b8fb12
 }
