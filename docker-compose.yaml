@@ -1,7 +1,7 @@
 services:
     apache:
         image: php:8.5-apache
-        container_name: file-rouge_apache
+        container_name: eSchool_ap
         build:
             context: ./php
         ports:
@@ -9,16 +9,16 @@ services:
         volumes:
             -   ./app:/var/www/html/
         depends_on:
-            -   mysql
-            
-    mysql:
+            -   database
+    
+    database:
         image: mysql:8.0
-        container_name: file-rouge_mysql
+        container_name: eSchool_my
         environment:
             MYSQL_ROOT_PASSWORD: adminGroup4
-            MYSQL_DATABASE: eschool
+            MYSQL_DATABASE: eSchool
             MYSQL_USER: admin
-            MYSQL_PASSWORD: userGroup4
+            MYSQL_PASSWORD: admin7791
         ports:
             -   "3306:3306"
         volumes:
@@ -26,17 +26,19 @@ services:
     
     phpmyadmin:
         image: phpmyadmin
-        container_name: file-rouge_admin
+        container_name: eSchool_pma
         ports:
             -   "8081:80"
         environment:
-            PMA_HOST: mysql
+            PMA_HOST: database
             PMA_PASSWORD: adminGroup4
         depends_on:
-            -   mysql
+            -   database
+    
     
     mail_hog:
         image: mailhog/mailhog
+        container_name: eSchool_mail
         logging:
             driver: 'none'
         ports:
