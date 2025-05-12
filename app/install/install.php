@@ -18,10 +18,10 @@ function createTable($pdo){
         )",
         "CREATE TABLE IF NOT EXISTS Category (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(50) NOT NULL,
+            name VARCHAR(50) NOT NULL
         )",
         "CREATE TABLE IF NOT EXISTS Role(
-            id INT AUT0_INCREMENT PRIMARY KEY,
+            id INT PRIMARY KEY AUTO_INCREMENT,
             name VARCHAR(50) NOT NULL,
             level INT NOT NULL
         )",
@@ -34,12 +34,12 @@ function createTable($pdo){
             lastname VARCHAR(50) NOT NULL,
             firstname VARCHAR(50) NOT NULL,
             email VARCHAR(250) NOT NULL UNIQUE,
-            passwd VARCHAR(30) NOT NULL,
+            passwd VARCHAR(32) NOT NULL,
             id_role INT NOT NULL,
             FOREIGN KEY (id_role) REFERENCES Role(id)
         )",
-        "CREATE TABLE IF NOT EXISTS Order(
-            id INT AUTO_INCREMENT PRIMARY KEY,
+        "CREATE TABLE IF NOT EXISTS Ordered(
+            id INT PRIMARY KEY AUTO_INCREMENT ,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             total INT NOT NULL,
             id_status INT NOT NULL,
@@ -47,19 +47,19 @@ function createTable($pdo){
             FOREIGN KEY (id_status) REFERENCES Status(id),
             FOREIGN KEY (id_user) REFERENCES User(id)
         )",
-        "CREATE TABLE IF NOT EXISTS associate(
+        "CREATE TABLE IF NOT EXISTS Associate(
             id_formation INT NOT NULL,
-            id_order INT NOT NULL,
-            PRIMARY KEY (id_formation, id_order),
+            id_ordered INT NOT NULL,
+            PRIMARY KEY (id_formation, id_ordered),
             FOREIGN KEY (id_formation) REFERENCES Formation(id),
-            FOREIGN KEY (id_order) REFERENCES Order(id)
+            FOREIGN KEY (id_ordered) REFERENCES Ordered(id)
         )",
-        "CREATE TABLE IF NOT EXISTS belong(
+        "CREATE TABLE IF NOT EXISTS Belong(
             id_formation INT NOT NULL,
             id_category INT NOT NULL,
             PRIMARY KEY (id_formation, id_category),
             FOREIGN KEY (id_formation) REFERENCES Formation(id),
-            FOREIGN KEY (id_category) REFERENCES Category(id),
+            FOREIGN KEY (id_category) REFERENCES Category(id)
         )",
         "CREATE TABLE IF NOT EXISTS dispense(
             id_user INT NOT NULL,
@@ -116,3 +116,5 @@ function insertFormation($pdo){
         $pdo->exec($formation);
     }
 }
+createTable($pdo);
+echo 'database initialisée';
