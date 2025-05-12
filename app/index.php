@@ -145,7 +145,12 @@
                             <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
                         </ul>
                         <div class="text-center">
-                            <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            <form action="formation.php" method="get">
+                                <label>
+                                    <input type="hidden" name="formation" value="html">
+                                    <button class="btn btn-primary fs-4" type="submit">Savoir Plus</button>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </article>
@@ -163,7 +168,12 @@
                             <li class="fs-2 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
                         </ul>
                         <div class="text-center">
-                            <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            <form action="formation.php" method="get">
+                                <label>
+                                    <input type="hidden" name="formation" value="css">
+                                    <button class="btn btn-primary fs-4" type="submit">Savoir Plus</button>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </article>
@@ -182,10 +192,14 @@
                             <li class="fs-2 text-secondary-emphasis">Introduction aux frameworks JavaScript (ex. : React
                                 ou Vue.js)
                             </li>
-                            <li>Asynchrone : Promesses et Fetch API</li>
                         </ul>
                         <div class="text-center">
-                            <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            <form action="formation.php" method="get">
+                                <label>
+                                    <input type="hidden" name="formation" value="javascript">
+                                    <button class="btn btn-primary fs-4" type="submit">Savoir Plus</button>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </article>
@@ -209,7 +223,12 @@
                             <li class="fs-2 text-secondary-emphasis">Spring Framework</li>
                         </ul>
                         <div class="text-center">
-                            <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            <form action="formation.php" method="get">
+                                <label>
+                                    <input type="hidden" name="formation" value="java">
+                                    <button class="btn btn-primary fs-4" type="submit">Savoir Plus</button>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </article>
@@ -225,7 +244,12 @@
                             <li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
                         </ul>
                         <div class="text-center">
-                            <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            <form action="formation.php" method="get">
+                                <label>
+                                    <input type="hidden" name="formation" value="python">
+                                    <button class="btn btn-primary fs-4" type="submit">Savoir Plus</button>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </article>
@@ -241,7 +265,12 @@
                             <li class="fs-2 text-secondary-emphasis">Frameworks PHP</li>
                         </ul>
                         <div class="text-center">
-                            <button class="btn btn-primary fs-4">Savoir Plus</button>
+                            <form action="formation.php" method="get">
+                                <label>
+                                    <input type="hidden" name="formation" value="php">
+                                    <button class="btn btn-primary fs-4" type="submit">Savoir Plus</button>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </article>

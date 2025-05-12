@@ -1,58 +1,20 @@
-<!doctype html>
-<html lang="fr">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="./css/style.css">
-	<title>Formation HTML - e-school</title>
-</head>
-
-<body>
-	<header class="container py-3">
-		<nav class="row d-flex align-items-center">
-			<div class="col-1 w-25">
-				<a href="index.html"><img src="assets/LogoCrop.png" alt="logo de e-school"></a>
-			</div>
-			<form class="flex-grow-1 d-flex col-6">
-				<input class="form-control" type="text" name="search" placeholder="Recherche...">
-				<button class="btn btn-primary cursor-pointer" type="submit">🔍</button>
-			</form>
-
-			<div class="col-auto">
-				<button id="burger" class="btn border-0 bg-transparent cursor-pointer" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-					<svg class="" width="50" height="50" viewBox="0 0 50 50"
-						xmlns="http://www.w3.org/2000/svg">
-						<rect x="5" y="5" width="40" height="40" rx="8" ry="8" fill="white" />
-						<line x1="15" y1="18" x2="35" y2="18" stroke="black" stroke-width="3"
-							stroke-linecap="round" />
-						<line x1="15" y1="25" x2="35" y2="25" stroke="black" stroke-width="3"
-							stroke-linecap="round" />
-						<line x1="15" y1="32" x2="35" y2="32" stroke="black" stroke-width="3"
-							stroke-linecap="round" />
-					</svg>
-				</button>
-			</div>
-			<div class="collapse collapse-horizontal" id="menu">
-				<ul class="list-unstyled text-center bg-light p-3 shadow">
-					<li><a class="text-decoration-none fs-2 text-secondary" href="index.html">Accueil</a></li>
-					<li><a class="text-decoration-none fs-2 text-secondary" href="html/catalogue.html">catalogue</a></li>
-					<li><a class="text-decoration-none fs-2 text-secondary" href="html/formation.html">Formation</a></li>
-					<li><a class="text-decoration-none fs-2 text-secondary" href="#">Login</a></li>
-					<li><a class="text-decoration-none fs-2 text-secondary" href="#">Signup</a></li>
-					<li><a class="text-decoration-none fs-2 text-secondary" href="#">Contact</a></li>
-				</ul>
-				<button id="close" class="btn">X</button>
-			</div>
-		</nav>
-	</header>
+<?php
+if($_SERVER['REQUEST_METHOD'] === 'GET'){
+    $title = $_GET['formation'];
+    require_once  'includes/dbconnect.php';
+// Requete sql
+    $sql = 'SELECT title, duration, content, price, description FROM Formation WHERE title = :title;';
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+    if($stmt->execute()){
+        $formation = $stmt->fetch();
+    }
+}
+include_once 'includes/header.php';
+?>
 	<main id="formation">
 		<section class="container mt-4">
-			<h1 class="text-center pb-5">Formation en développement HTML</h1>
+			<h1 class="text-center pb-5">Formation en développement <span class="text-uppercase fs-1"><?= $formation['title'];?></span></h1>
 			<div class="row flex-column flex-md-row shadow-sm mb-4">
 				<p class="text-center pb-5">Cette formation vous permet d'acquérir les bases indispensables à la création de pages web modernes.</p>
 
@@ -62,11 +24,11 @@
 				<div class="col-12 col-md-4">
 					<h2 class="text-center pb-5">Détails de la formation</h2>
 					<ul class="list-group">
-						<li class="list-group-item">Durée : 60 Heures</li>
+						<li class="list-group-item">Durée : <?= $formation['duration'];?> Heures</li>
 						<li class="list-group-item">Langues : Français</li>
-						<li class="list-group-item">Contenu : 34 exercices interactifs</li>
+						<li class="list-group-item">Contenu : <?= $formation['content'];?> exercices interactifs</li>
 						<li class="list-group-item">Accès : Mobile & PC</li>
-						<li class="list-group-item">Prix : 200 euros</li>
+						<li class="list-group-item">Prix : <?= $formation['price'];?> euros</li>
 						<li class="list-group-item">Certification incluse</li>
 					</ul>
 					<div class="pt-4 mb-4">
@@ -74,72 +36,10 @@
 					</div>
 				</div>
 		</section>
-
-<<<<<<< HEAD:app/html_formation.php
-		<section class="container mt-4 shadow-sm">
-			<h2 class="p-2">Présentation de la formation</h2>
-=======
 		<section class="container mt-4"  >
-			<h2  class="p-2">
-				Présentation de la formation
-			</h2>
->>>>>>> fd3da87678fb3feae4dac6731e0a0cc0c5b8fb12:app/formation.php
-			<p>Notre formation en développement HTML couvre les concepts fondamentaux tels que les balises, la structure
-				d'une page web, l'intégration de médias et bien plus. Ce parcours est pensé pour les débutants ou ceux
-				qui souhaitent renforcer leurs bases.</p>
-
-			<h2>Modules de la formation</h2>
-			<div>
-				<details class="p-3">
-					<summary>Introduction au HTML : bases et historique</summary>
-					<p>Une introduction complète au HTML, couvrant son historique, son importance et ses bases essentielles.</p>
-				</details>
-				<details class="p-3">
-					<summary>Structuration des pages web : utilisation des balises sémantiques</summary>
-					<p>Découvrez comment structurer vos pages web de manière claire et accessible en utilisant des balises sémantiques.</p>
-				</details>
-				<details class="p-3">
-					<summary>Gestion des images et des liens hypertextes</summary>
-					<p>Apprenez à intégrer des images et à créer des liens hypertextes pour rendre vos pages interactives.</p>
-				</details>
-				<details class="p-3">
-					<summary>Gestion des Formulaires HTML</summary>
-					<p>Découvrez comment concevoir des formulaires efficaces pour collecter des données utilisateur.</p>
-				</details>
-				<details class="p-3">
-					<summary>Mise en forme avancée avec CSS intégré au HTML</summary>
-					<p>Explorez les techniques de mise en forme avancée en combinant HTML et CSS pour des designs modernes.</p>
-				</details>
-			</div>
-		</section>
-
-		<section class="container mt-4 shadow-sm">
-			<h2 class="p-2">Les prérequis de la formation</h2>
-			<ul>
-				<li>Aucune connaissance préalable n'est requise, on part de 0 !</li>
-				<li>Une curiosité et une motivation pour apprendre le développement web.</li>
-				<li>Avoir un ordinateur Windows, Mac OS ou Linux !</li>
-				<li>Un éditeur de texte comme Visual Studio Code</li>
-			</ul>
-			<p>C'est tout !</p>
-		</section>
-
-		<section class="container mt-4 p-2 shadow-sm">
-			<h2 class="p-2">Le Formateur</h2>
-			<p>Notre formation est animée par [Nom du Formateur], développeur web avec plus de 8 ans d'expérience dans
-				la création de sites web modernes et optimisés. Son approche pédagogique est axée sur :</p>
-
-			<ul>
-				<li>La Pratique : Chaque module inclut des exercices concrets pour vous assurer de maîtriser les
-					concepts appris.</li>
-				<li>La Simplicité : Une explication claire des concepts techniques, adaptée aux apprenants débutants.</li>
-				<li>L'Interactivité : Disponible pour répondre à vos questions et vous aider à surmonter les éventuels
-					blocages.</li>
-			</ul>
+            <?= $formation['description'];?>
 		</section>
 	</main>
-
-
 
 	<footer class="bg-dark text-white text-center py-3 mt-4">
 		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
