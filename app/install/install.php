@@ -77,7 +77,7 @@ function createTable($pdo){
 
 function insertFormation($pdo){
     $formations = [
-        ['Html', 60, 25, 200.00, '<h2 class="p-2">Présentation de la formation</h2>
+        ['html', 60, 25, 200.00, '<h2 class="p-2">Présentation de la formation</h2>
 	<p>Notre formation en développement HTML couvre les concepts fondamentaux tels que les balises, la structure
 		d\'une page web, l\'intégration de médias et bien plus. Ce parcours est pensé pour les débutants ou ceux
 		qui souhaitent renforcer leurs bases.</p>
@@ -114,7 +114,7 @@ function insertFormation($pdo){
 		<li>Un éditeur de texte comme Visual Studio Code</li>
 	</ul>
 	<p>C est tout !</p></div>'],
-        ['Javascript', 75, 30, '300', '<div class="container mt-4 shadow-sm">
+        ['javascript', 75, 30, '300', '<div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation en JavaScript vous apprendra à rendre vos pages web dynamiques et interactives avec l\'utilisation des dernières techniques JavaScript.</p>
 
@@ -164,7 +164,7 @@ function insertFormation($pdo){
                 <li>L\'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
             </ul>
         </div>'],
-        ['Css', 60, 30, '200.00', '<div class="container mt-4 shadow-sm">
+        ['css', 60, 30, '200.00', '<div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation en CSS vous apprendra à styliser vos pages web de manière professionnelle en utilisant les dernières techniques et propriétés CSS.</p>
 
@@ -214,7 +214,7 @@ function insertFormation($pdo){
                 <li>L\'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
             </ul>
         </div>'],
-        ['Java', 80, 40, '350.00', '<div class="container mt-4 shadow-sm">
+        ['java', 80, 40, '350.00', '<div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation en Java vous apprendra à créer des applications logicielles avec un code propre et bien structuré. Vous apprendrez à utiliser les concepts clés du langage Java pour le développement d\'applications web et mobiles.</p>
 
@@ -264,7 +264,7 @@ function insertFormation($pdo){
                 <li>L\'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
             </ul>
         </div>'],
-        ['Python', 60, 25, '350.00', '<div class="container mt-4 shadow-sm">
+        ['python', 60, 25, '350.00', '<div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation Python vous apprendra à coder en Python pour des applications variées telles que le développement web, l\'analyse de données, l\'automatisation des tâches et bien plus.</p>
 
@@ -313,7 +313,7 @@ function insertFormation($pdo){
                 <li>Support continu et sessions de questions-réponses pour répondre à vos besoins spécifiques.</li>
             </ul>
         </div>'],
-        ['PHP', 60, 25, '350.00', '<div class="container mt-4 shadow-sm">
+        ['php', 60, 25, '350.00', '<div class="container mt-4 shadow-sm">
             <h2 class="p-2">Présentation de la formation</h2>
             <p>Notre formation PHP vous apprendra à créer des applications web dynamiques, en utilisant le PHP pour interagir avec des bases de données, gérer les formulaires, et gérer les sessions utilisateurs.</p>
 
