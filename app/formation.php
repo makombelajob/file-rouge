@@ -1,11 +1,11 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] === 'GET'){
-    $title = $_GET['formation'];
+    $id = $_GET['id'];
     require_once  'includes/dbconnect.php';
 // Requete sql
-    $sql = 'SELECT title, duration, content, price, description FROM Formation WHERE title = :title;';
+    $sql = 'SELECT title, duration, content, price, description FROM Formation WHERE id = :id;';
     $stmt = $pdo->prepare($sql);
-    $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+    $stmt->bindValue(':id', $id, PDO::PARAM_STR);
     if($stmt->execute()){
         $formation = $stmt->fetch();
     }
