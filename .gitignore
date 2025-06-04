@@ -1,3 +1,5 @@
 mysql
 .idea
-.vscode
+app/.env
+app/.env.dev
+app/.env.local
