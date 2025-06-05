@@ -2,7 +2,7 @@
     <div class="row align-items-center">
         <!-- Logo -->
         <div class="col-3 col-lg-2">
-            <a href="">
+            <a href="/">
                 <img src="{{ asset('images/logo.png') }}" alt="logo de e-school" class="img-fluid">
             </a>
         </div>
@@ -16,27 +16,37 @@
 
         <!-- Burger menu (mobile only) -->
         <div class="col-3 d-lg-none text-end">
-            <button id="burger" class="btn border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button id="burger" class="btn border-0 bg-transparent" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu">
                 <!-- SVG burger icon -->
                 <svg width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5" y="5" width="40" height="40" rx="8" ry="8" fill="white" />
-                    <line x1="15" y1="18" x2="35" y2="18" stroke="black" stroke-width="3" stroke-linecap="round" />
-                    <line x1="15" y1="25" x2="35" y2="25" stroke="black" stroke-width="3" stroke-linecap="round" />
-                    <line x1="15" y1="32" x2="35" y2="32" stroke="black" stroke-width="3" stroke-linecap="round" />
+                    <rect x="5" y="5" width="40" height="40" rx="8" ry="8" fill="white"/>
+                    <line x1="15" y1="18" x2="35" y2="18" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="15" y1="25" x2="35" y2="25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="15" y1="32" x2="35" y2="32" stroke="black" stroke-width="3" stroke-linecap="round"/>
                 </svg>
             </button>
         </div>
 
         <!-- Menu complet (mobile collapsé, desktop affiché) -->
-        <div class="col-12 collapse d-lg-flex justify-content-center mt-3 mt-lg-0 d-lg-none" id="menu">
-            <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-                <li><a class="fs-4 text-decoration-none text-secondary" href="index.php">Accueil</a></li>
-                <li><a class="fs-4 text-decoration-none text-secondary" href="catalogue.php">Catalogue</a></li>
-                <li><a class="fs-4 text-decoration-none text-secondary" href="formation.php">Formation</a></li>
-                <li><a class="fs-4 text-decoration-none text-secondary" href="login.php">Login</a></li>
-                <li><a class="fs-4 text-decoration-none text-secondary" href="signup.php">Signup</a></li>
-                <li><a class="fs-4 text-decoration-none text-secondary" href="#contact">Contact</a></li>
-            </ul>
+        <div class="position-relative w-100">
+            <div
+                class=" position-absolute top-0  w-100 bg-white z-3 collapse d-lg-flex justify-content-center mt-1 mt-lg-0 d-lg-none"
+                id="menu">
+                <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                    <li><a class="fs-4 text-decoration-none text-secondary" href="/">Accueil</a></li>
+                    <li><a class="fs-4 text-decoration-none text-secondary" href="catalogue.php">Catalogue</a></li>
+                    <li><a class="fs-4 text-decoration-none text-secondary" href="{{ path('app_login') }}">Login</a>
+                    </li>
+                    <li><a class="fs-4 text-decoration-none text-secondary" href="{{ path('app_register') }}">Signup</a>
+                    </li>
+                    <li><a class="fs-4 text-decoration-none text-secondary" href="/#contact">Contact</a></li>
+                </ul>
+                <div class="position-absolute top-0 left-0 w-100">
+                    <button type="button" data-bs-toggle="collapse" class="btn-close" aria-label="Close"
+                            data-bs-target="#menu"></button>
+                </div>
+            </div>
         </div>
     </div>
 </header>

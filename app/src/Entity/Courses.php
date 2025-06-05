@@ -22,11 +22,11 @@ class Courses
     #[ORM\Column]
     private ?int $duration = null;
 
-    #[ORM\Column]
+    #[ORM\Column(options:['default' => 'CURRENT_TIMESTAMP'] )]
     private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column(length: 100)]
-    private ?string $content = null;
+    private ?int $content = null;
 
     #[ORM\Column]
     private ?int $price = null;
@@ -60,6 +60,7 @@ class Courses
         $this->users = new ArrayCollection();
         $this->orders = new ArrayCollection();
         $this->categories = new ArrayCollection();
+        $this->createdAt = new \DateTimeImmutable();
     }
 
     public function getId(): ?int
@@ -103,12 +104,12 @@ class Courses
         return $this;
     }
 
-    public function getContent(): ?string
+    public function getContent(): ?int
     {
         return $this->content;
     }
 
-    public function setContent(string $content): static
+    public function setContent(int $content): static
     {
         $this->content = $content;
 

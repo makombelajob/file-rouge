@@ -1,48 +1,47 @@
 {% extends 'base.html.twig' %}
 {# {% include 'images/sprites.svg' %} #}
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}page d'accueil{% endblock %}
 
 {% block body %}
-<main class="container">
-    <!-- Section du slide  -->
-    <section>
-        <div class="row">
-            <h1 class="col-12 text-center fs-1 fw-bolder my-2 text-uppercase">E-school</h1>
-            <div class="carousel slide col-12">
-                <article class="carousel-inner">
-                    <figure class="carousel-item active">
-                        <img class="d-block w-100" src="{{ asset('images/image_du_slide.jpeg') }}" alt="Image de l'école">
-                        <figcaption class="carousel-caption">
-                            <h2 class="fs-1">E-school</h2>
-                            <p>Nos actions</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('images/image_du_slide_2.jpeg') }}" alt="Image de l'école">
-                        <figcaption class="carousel-caption d-none d-md-block">
-                            <h2 class="fs-1">E-school</h2>
-                            <p>Nos actions</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('images/image_du_slide_3.jpeg') }}" alt="Image de l'école">
-                        <figcaption class="carousel-caption">
-                            <h2 class="fs-1">E-school</h2>
-                            <p>Nos actions</p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+    <section class="row">
+        <h1 class="col-12 text-center fs-1 fw-bolder my-2 text-uppercase">E-school</h1>
+        <div class="carousel slide col-12">
+            <article class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img class="d-block w-100" src="{{ asset('images/image_du_slide.jpeg') }}"
+                         alt="Image de l'école">
+                    <figcaption class="carousel-caption">
+                        <h2 class="fs-1">E-school</h2>
+                        <p>Nos actions</p>
+                    </figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('images/image_du_slide_2.jpeg') }}"
+                         alt="Image de l'école">
+                    <figcaption class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1">E-school</h2>
+                        <p>Nos actions</p>
+                    </figcaption>
+                </figure>
+                <figure class="carousel-item">
+                    <img class="d-block w-100" src="{{ asset('images/image_du_slide_3.jpeg') }}"
+                         alt="Image de l'école">
+                    <figcaption class="carousel-caption">
+                        <h2 class="fs-1">E-school</h2>
+                        <p>Nos actions</p>
+                    </figcaption>
+                </figure>
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
@@ -51,7 +50,8 @@
         <h2 class="text-center text-uppercase fs-1 my-3 fw-semibold">🏫 Présentation</h2>
         <div class="row justify-content-between">
             <article class="col-md-5 card m-2">
-                <img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}" alt="Image de representation de l'ecole">
+                <img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}"
+                     alt="Image de representation de l'ecole">
                 <div class="card-body">
                     <h2 class="card-title fs-2 text-center fw-semibold text-uppercase my-3">Votre avenir commence ici,
                         avec eSchool.</h2>
@@ -66,7 +66,8 @@
             </article>
             <article class="col-md-5 card m-2">
 
-                <img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}" alt="Image catalogue de l'ecole">
+                <img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}"
+                     alt="Image catalogue de l'ecole">
                 <div class="card-body">
                     <h2 class="card-title fs-2 text-center fw-semibold text-uppercase my-3">Pourquoi choisir eSchool
                         ?</h2>
@@ -79,7 +80,8 @@
                 </div>
             </article>
             <article class="col-md-5 card m-2 row">
-                <img class="card-img-top" src="{{ asset('images/image_du_slide_3.jpeg') }}" alt="Image nos valeurs de l'ecole">
+                <img class="card-img-top" src="{{ asset('images/image_du_slide_3.jpeg') }}"
+                     alt="Image nos valeurs de l'ecole">
                 <div class="card-body col-12">
                     <h2 class="card-title fs-2 text-center fw-semibold text-uppercase my-3">Nos valeurs</h2>
                     <ul class="card-content list-unstyled row">
@@ -109,7 +111,8 @@
                 </div>
             </article>
             <article class="col-md-5 card m-2 row">
-                <img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}" alt="Image representant l'ecole">
+                <img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}"
+                     alt="Image representant l'ecole">
                 <div class="card-body">
                     <h2 class="card-title fs-2 text-uppercase fw-semibold text-center my-2">Témoignages d’étudiants</h2>
                     <p class="card-text fs-2 my-4">"Grâce à eSchool, j’ai réussi ma reconversion professionnelle et j’ai
@@ -148,7 +151,7 @@
                             <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
                         </ul>
                         <div class="text-center">
-                            <a href="formation.php?id=1"  class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="/courses/1" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -166,7 +169,7 @@
                             <li class="fs-2 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
                         </ul>
                         <div class="text-center">
-                            <a href="formation.php?id=3"  class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="/courses/2" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -187,7 +190,7 @@
                             </li>
                         </ul>
                         <div class="text-center">
-                        <a href="formation.php?id=2"  class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="/courses/3" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -211,23 +214,7 @@
                             <li class="fs-2 text-secondary-emphasis">Spring Framework</li>
                         </ul>
                         <div class="text-center">
-                        <a href="formation.php?id=4"  class="btn btn-primary fs-4">Savoir plus</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md card m-2">
-                    <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
-                        <use xlink:href="{{ asset('images/sprites.svg') }}#python"></use>
-                    </svg>
-                    <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">Python</h2>
-                        <ul class="list-unstyled">
-                            <li class="fs-2 text-secondary-emphasis">Python de base</li>
-                            <li class="fs-2 text-secondary-emphasis">Frameworks Python</li>
-                            <li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
-                        </ul>
-                        <div class="text-center">
-                        <a href="formation.php?id=5"  class="btn btn-primary fs-4">Savoir plus<a>
+                            <a href="/courses/4" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -243,7 +230,23 @@
                             <li class="fs-2 text-secondary-emphasis">Frameworks PHP</li>
                         </ul>
                         <div class="text-center">
-                        <a href="formation.php?id=6"  class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="/courses/5" class="btn btn-primary fs-4">Savoir plus</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md card m-2">
+                    <svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+                        <use xlink:href="{{ asset('images/sprites.svg') }}#python"></use>
+                    </svg>
+                    <div class="card-body">
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder">Python</h2>
+                        <ul class="list-unstyled">
+                            <li class="fs-2 text-secondary-emphasis">Python de base</li>
+                            <li class="fs-2 text-secondary-emphasis">Frameworks Python</li>
+                            <li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/courses/6" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -298,9 +301,9 @@
         <a href="#" class="position-fixed bottom-0 end-0 m-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="lightblue"
                  class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                <path
+                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
             </svg>
         </a>
     </div>
-</main>
 {% endblock %}

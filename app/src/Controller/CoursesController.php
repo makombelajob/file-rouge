@@ -7,11 +7,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-final class HomeController extends AbstractController
+final class CoursesController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
-    public function index(): Response
+    #[Route('/courses/{id}', name: 'app_courses')]
+    public function index(Courses $cours): Response
     {
-        return $this->render('home/index.html.twig');
+        return $this->render('courses/index.html.twig', compact('cours'));
     }
 }
