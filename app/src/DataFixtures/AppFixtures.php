@@ -78,6 +78,16 @@ class AppFixtures extends Fixture
                 		<li>Un éditeur de texte comme Visual Studio Code</li>
                 	</ul>
                 	<p>C\'est tout !</p></div>
+                    <div class="container mt-4 p-2 shadow-sm">
+                            <h2 class="p-2">Le Formateur</h2>
+                            <p>Notre formation est animée par Jean François, expert en CSS avec plus de 10 ans d\'expérience dans la création de sites web modernes et performants. Son approche pédagogique est centrée sur :</p>
+
+                            <ul>
+                                <li>La Pratique : Chaque module inclut des exercices pratiques pour vous permettre de mettre en œuvre les concepts appris.</li>
+                                <li>La Simplicité : Des explications claires, accessibles aux débutants.</li>
+                                <li>L\'Interactivité : Le formateur est disponible pour répondre à vos questions et vous guider tout au long de la formation.</li>
+                            </ul>
+                        </div>
                 ',
                 'document_link' => 'https://e-school.fr/html.pdf',
                 'introduction' => '
@@ -87,6 +97,7 @@ class AppFixtures extends Fixture
                     <li class="fs-2 text-secondary-emphasis">Formulaires et formulaires interactifs</li>
                     <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
                 </ul>
+                
                 ',
             ],
             [
@@ -137,7 +148,7 @@ class AppFixtures extends Fixture
 
                         <div class="container mt-4 p-2 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
-                            <p>Notre formation est animée par [Nom du Formateur], expert en CSS avec plus de 10 ans d\'expérience dans la création de sites web modernes et performants. Son approche pédagogique est centrée sur :</p>
+                            <p>Notre formation est animée par Patrick Souvene, expert en CSS avec plus de 10 ans d\'expérience dans la création de sites web modernes et performants. Son approche pédagogique est centrée sur :</p>
 
                             <ul>
                                 <li>La Pratique : Chaque module inclut des exercices pratiques pour vous permettre de mettre en œuvre les concepts appris.</li>
@@ -205,7 +216,7 @@ class AppFixtures extends Fixture
 
                         <div class="container mt-4 p-2 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
-                            <p>Notre formation est animée par [Nom du Formateur], expert en JavaScript avec plus de 10 ans d\'expérience dans le développement d\'applications web modernes. Son approche pédagogique est centrée sur :</p>
+                            <p>Notre formation est animée par Alice picarte, expert en JavaScript avec plus de 10 ans d\'expérience dans le développement d\'applications web modernes. Son approche pédagogique est centrée sur :</p>
 
                             <ul>
                                 <li>La Pratique : Chaque module inclut des exercices pratiques pour vous permettre de mettre en œuvre les concepts appris.</li>
@@ -275,7 +286,7 @@ class AppFixtures extends Fixture
 
                         <div class="container mt-4 p-2 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
-                            <p>Notre formation est animée par [Nom du Formateur], un expert Python avec plus de 10 ans d\'expérience dans le développement d\'applications variées et l\'analyse de données. Vous serez accompagné tout au long de la formation pour garantir une progression optimale.</p>
+                            <p>Notre formation est animée par Joachim sésar, un expert Python avec plus de 10 ans d\'expérience dans le développement d\'applications variées et l\'analyse de données. Vous serez accompagné tout au long de la formation pour garantir une progression optimale.</p>
 
                             <ul>
                                 <li>Approche pratique et interactive avec des exercices réels.</li>
@@ -340,7 +351,7 @@ class AppFixtures extends Fixture
 
                         <div class="container mt-4 p-2 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
-                            <p>Notre formation est animée par [Nom du Formateur], expert PHP avec plus de 10 ans d\'expérience dans le développement d\'applications web complexes. Il vous guidera pas à pas à travers chaque concept de la formation, de l\'introduction au PHP à la gestion des bases de données et de la sécurité des applications.</p>
+                            <p>Notre formation est animée par Jules Pages, expert PHP avec plus de 10 ans d\'expérience dans le développement d\'applications web complexes. Il vous guidera pas à pas à travers chaque concept de la formation, de l\'introduction au PHP à la gestion des bases de données et de la sécurité des applications.</p>
 
                             <ul>
                                 <li>Approche pratique et interactive avec des exercices réels.</li>
@@ -406,7 +417,7 @@ class AppFixtures extends Fixture
 
                         <div class="container mt-4 p-2 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
-                            <p>Notre formation est animée par [Nom du Formateur], expert en Java avec plus de 15 ans d\'expérience dans le développement d\'applications. Son approche pédagogique est centrée sur :</p>
+                            <p>Notre formation est animée par <strong class="text-secodary">Benjamin</strong> fenetre, expert en Java avec plus de 15 ans d\'expérience dans le développement d\'applications. Son approche pédagogique est centrée sur :</p>
 
                             <ul>
                                 <li>La Pratique : Chaque module comprend des exercices pratiques pour mettre en application les concepts appris.</li>

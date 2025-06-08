@@ -4,9 +4,34 @@
 
 {% block body %}
 
-<div class="example-wrapper">
-    <h1>Hello </h1>
+<main id="formation">
+	<section class="container mt-4">
+		<h1 class="text-center pb-5">Formation en développement <strong class="text-primary">{{ cours.title }} </strong></h1>
+		<div class="row flex-column flex-md-row shadow-sm mb-4">
+			<p class="text-center pb-5">Cette formation vous permet de maîtriser le JavaScript pour rendre vos sites interactifs et dynamiques.</p>
 
-    {{ cours.title }}
-</div>
+			<div class="col-12 col-md-8 mb-4">
+				<img src="./assets/js-example.jpg" class="img-fluid rounded" alt="Exemple de formation JavaScript">
+			</div>
+			<div class="col-12 col-md-4">
+				<h2 class="text-center pb-5">Détails de la formation</h2>
+				<ul class="list-group">
+					<li class="list-group-item">Durée : {{ cours.duration }} Heures</li>
+					<li class="list-group-item">Langues : Français</li>
+					<li class="list-group-item">Contenu : {{ cours.content }} exercices pratiques</li>
+					<li class="list-group-item">Accès : Mobile & PC</li>
+					<li class="list-group-item">Certification incluse</li>
+				</ul>
+				<div class="my-3 text-center">
+					<a href="{{ path('app_register')}}" class="btn btn-primary" type="submit">Inscrivez-vous !</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container mt-4 shadow-sm">
+		{{ cours.description | raw }}
+	</div>
+</main>
+
 {% endblock %}
