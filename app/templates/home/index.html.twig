@@ -5,7 +5,7 @@
 {% block body %}
     <section class="row">
         <h1 class="col-12 text-center fs-1 fw-bolder my-2 text-uppercase">E-school</h1>
-        <div class="carousel slide col-12">
+        <div class="carousel slide col-12" id="carousel">
             <article class="carousel-inner">
                 <figure class="carousel-item active">
                     <img class="d-block w-100" src="{{ asset('images/image_du_slide.jpeg') }}"
@@ -32,12 +32,12 @@
                     </figcaption>
                 </figure>
             </article>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
                     data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
                     data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -143,15 +143,12 @@
                         <use xlink:href="{{ asset('images/sprites.svg') }}#html"></use>
                     </svg>
                     <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">HTML (Hypertext Markup Language)</h2>
-                        <ul class="list-unstyled">
-                            <li class="fs-2 text-secondary-emphasis">Structure de base d'une page web</li>
-                            <li class="fs-2 text-secondary-emphasis">Balises HTML, éléments de texte, liens, images</li>
-                            <li class="fs-2 text-secondary-emphasis">Formulaires et formulaires interactifs</li>
-                            <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
-                        </ul>
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder"><strong
+                                class="text-primary">{{ html.title }} </strong>(Hypertext Markup Language)</h2>
+                        {{ html.introduction | raw }}
                         <div class="text-center">
-                            <a href="/courses/1" class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="{{ path('app_formation', {id:html.id}) }}" class="btn btn-primary fs-4">Savoir
+                                plus</a>
                         </div>
                     </div>
                 </article>
@@ -160,16 +157,15 @@
                         <use xlink:href="{{ asset('images/sprites.svg') }}#css"></use>
                     </svg>
                     <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">CSS (Cascading Style Sheets)</h2>
-                        <ul class="list-unstyled">
-                            <li class="fs-2 text-secondary-emphasis">Mise en forme des éléments</li>
-                            <li class="fs-2 text-secondary-emphasis">Layouts (flexbox, grid, etc.)</li>
-                            <li class="fs-2 text-secondary-emphasis">Responsive et design adaptatif (mobile-first)</li>
-                            <li class="fs-2 text-secondary-emphasis">Animations et transitions CSS</li>
-                            <li class="fs-2 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
-                        </ul>
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder">
+                            <strong class="text-primary">{{ css.title }}
+                            </strong>
+                            (Cascading Style Sheets)</h2>
+
+                        {{ css.introduction | raw }}
                         <div class="text-center">
-                            <a href="/courses/2" class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="{{ path('app_formation', {id:css.id}) }}" class="btn btn-primary fs-4">Savoir
+                                plus</a>
                         </div>
                     </div>
                 </article>
@@ -178,17 +174,10 @@
                         <use xlink:href="{{ asset('images/sprites.svg') }}#js"></use>
                     </svg>
                     <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">JavaScript</h2>
-                        <ul class="list-unstyled">
-                            <li class="fs-2 text-secondary-emphasis">Syntaxe de base, variables, fonctions, boucles</li>
-                            <li class="fs-2 text-secondary-emphasis">Manipulation du DOM (Document Object Model)</li>
-                            <li class="fs-2 text-secondary-emphasis">Événements et gestion des interactions
-                                utilisateurs
-                            </li>
-                            <li class="fs-2 text-secondary-emphasis">Introduction aux frameworks JavaScript (ex. : React
-                                ou Vue.js)
-                            </li>
-                        </ul>
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder"><strong
+                                class="text-primary">{{ javascript.title }}
+                            </strong></h2>
+                        {{ javascript.introduction | raw }}
                         <div class="text-center">
                             <a href="/courses/3" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
@@ -207,14 +196,10 @@
                         <use xlink:href="{{ asset('images/sprites.svg') }}#java"></use>
                     </svg>
                     <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">Java</h2>
-                        <ul class="list-unstyled">
-                            <li class="fs-2 text-secondary-emphasis">Introduction à Java</li>
-                            <li class="fs-2 text-secondary-emphasis">Programmation orientée objet (POO)</li>
-                            <li class="fs-2 text-secondary-emphasis">Spring Framework</li>
-                        </ul>
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder"><strong class="text-primary">{{ java.title }} </strong></h2>
+                        {{ java.introduction | raw }}
                         <div class="text-center">
-                            <a href="/courses/4" class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="{{ path('app_formation', {id:java.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -223,14 +208,10 @@
                         <use xlink:href="{{ asset('images/sprites.svg') }}#php"></use>
                     </svg>
                     <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">Php de base</h2>
-                        <ul class="list-unstyled">
-                            <li class="fs-2 text-secondary-emphasis">PHP de base</li>
-                            <li class="fs-2 text-secondary-emphasis">Bases de données avec PHP et MySQL</li>
-                            <li class="fs-2 text-secondary-emphasis">Frameworks PHP</li>
-                        </ul>
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder"><strong class="text-primary">{{ php.title }}</strong> de base</h2>
+                        {{ php.introduction | raw }}
                         <div class="text-center">
-                            <a href="/courses/5" class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="{{ path('app_formation', {id:php.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>
@@ -239,14 +220,14 @@
                         <use xlink:href="{{ asset('images/sprites.svg') }}#python"></use>
                     </svg>
                     <div class="card-body">
-                        <h2 class="card-title fs-1 text-uppercase fw-bolder">Python</h2>
+                        <h2 class="card-title fs-1 text-uppercase fw-bolder"><strong class="text-primary">{{ python.title }}</strong></h2>
                         <ul class="list-unstyled">
                             <li class="fs-2 text-secondary-emphasis">Python de base</li>
                             <li class="fs-2 text-secondary-emphasis">Frameworks Python</li>
                             <li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
                         </ul>
                         <div class="text-center">
-                            <a href="/courses/6" class="btn btn-primary fs-4">Savoir plus</a>
+                            <a href="{{ path('app_formation', {id:python.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
                         </div>
                     </div>
                 </article>

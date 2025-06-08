@@ -80,6 +80,14 @@ class AppFixtures extends Fixture
                 	<p>C\'est tout !</p></div>
                 ',
                 'document_link' => 'https://e-school.fr/html.pdf',
+                'introduction' => '
+                <ul class="list-unstyled">
+                    <li class="fs-2 text-secondary-emphasis">Structure de base d\'une page web</li>
+                    <li class="fs-2 text-secondary-emphasis">Balises HTML, éléments de texte, liens, images</li>
+                    <li class="fs-2 text-secondary-emphasis">Formulaires et formulaires interactifs</li>
+                    <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
+                </ul>
+                ',
             ],
             [
                 'title' => 'CSS',
@@ -139,9 +147,18 @@ class AppFixtures extends Fixture
                         </div>
                 ',
                 'document_link' => 'https://e-school/css.pdf',
+                'introduction' => '
+                <ul class="list-unstyled">
+                    <li class="fs-2 text-secondary-emphasis">Mise en forme des éléments</li>
+                    <li class="fs-2 text-secondary-emphasis">Layouts (flexbox, grid, etc.)</li>
+                    <li class="fs-2 text-secondary-emphasis">Responsive et design adaptatif (mobile-first)</li>
+                    <li class="fs-2 text-secondary-emphasis">Animations et transitions CSS</li>
+                    <li class="fs-2 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
+                </ul>
+                '
             ],
             [
-                'title' => 'JavaScript',
+                'title' => 'JAVASCRIPT',
                 'duration' => 75,
                 'content' => 30,
                 'price' => 300.00,
@@ -198,9 +215,21 @@ class AppFixtures extends Fixture
                         </div>
                 ',
                 'document_link' => 'https://e-school/javascript.pdf',
+                'introduction' => '
+                <ul class="list-unstyled">
+                    <li class="fs-2 text-secondary-emphasis">Syntaxe de base, variables, fonctions, boucles</li>
+                    <li class="fs-2 text-secondary-emphasis">Manipulation du DOM (Document Object Model)</li>
+                    <li class="fs-2 text-secondary-emphasis">Événements et gestion des interactions
+                                utilisateurs
+                    </li>
+                    <li class="fs-2 text-secondary-emphasis">Introduction aux frameworks JavaScript (ex. : React
+                                ou Vue.js)
+                    </li>
+                </ul>
+                '
             ],
             [
-                'title' => 'Python',
+                'title' => 'PYTHON',
                 'duration' => 60,
                 'content' => 25,
                 'price' => 350.00,
@@ -256,6 +285,13 @@ class AppFixtures extends Fixture
                         </div>
                 ',
                 'document_link' => 'https://e-school/python.pdf',
+                'introduction' => '
+                <ul class="list-unstyled">
+                    <li class="fs-2 text-secondary-emphasis">Python de base</li>
+                    <li class="fs-2 text-secondary-emphasis">Frameworks Python</li>
+                    <li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
+                </ul>
+                '
             ],
             [
                 'title' => 'PHP',
@@ -314,9 +350,16 @@ class AppFixtures extends Fixture
                         </div>
                 ',
                 'document_link' => 'https://e-school/php.pdf',
+                'introduction' => '
+                <ul class="list-unstyled">
+                    <li class="fs-2 text-secondary-emphasis">PHP de base</li>
+                    <li class="fs-2 text-secondary-emphasis">Bases de données avec PHP et MySQL</li>
+                    <li class="fs-2 text-secondary-emphasis">Frameworks PHP</li>
+                </ul>
+                '
             ],
             [
-                'title' => 'Java',
+                'title' => 'JAVA',
                 'duration' => 80,
                 'content' => 40,
                 'price' => 350.00,
@@ -373,6 +416,13 @@ class AppFixtures extends Fixture
                         </div>
                 ',
                 'document_link' => 'https://e-school/symfony.pdf',
+                'introduction' => '
+                <ul class="list-unstyled">
+                    <li class="fs-2 text-secondary-emphasis">Introduction à Java</li>
+                    <li class="fs-2 text-secondary-emphasis">Programmation orientée objet (POO)</li>
+                    <li class="fs-2 text-secondary-emphasis">Spring Framework</li>
+                </ul>
+                '
             ]
         ];
         foreach ($coursData as $cours) {
@@ -383,6 +433,7 @@ class AppFixtures extends Fixture
             $courseEntity->setPrice($cours['price']);
             $courseEntity->setDescription($cours['description']);
             $courseEntity->setDocumentLink($cours['document_link']);
+            $courseEntity->setIntroduction($cours['introduction']);
 
             $manager->persist($courseEntity);
         }

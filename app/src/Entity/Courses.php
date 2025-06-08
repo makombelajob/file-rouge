@@ -55,6 +55,9 @@ class Courses
     #[ORM\ManyToMany(targetEntity: Categories::class, inversedBy: 'courses')]
     private Collection $categories;
 
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $introduction = null;
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -226,6 +229,18 @@ class Courses
     public function removeCategory(Categories $category): static
     {
         $this->categories->removeElement($category);
+
+        return $this;
+    }
+
+    public function getIntroduction(): ?string
+    {
+        return $this->introduction;
+    }
+
+    public function setIntroduction(string $introduction): static
+    {
+        $this->introduction = $introduction;
 
         return $this;
     }
