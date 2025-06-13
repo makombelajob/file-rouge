@@ -218,6 +218,6 @@ class __TwigTemplate_14da8a022b7b92c8c3785741fedafa1b extends Template
         {{ form_end(registrationForm) }}
     </div>
 {% endblock %}
-", "registration/register.html.twig", "/var/www/html/templates/registration/register.html.twig");
+", "registration/register.html.twig", "/home/missaoui/eschool/file-rouge/app/templates/registration/register.html.twig");
     }
 }

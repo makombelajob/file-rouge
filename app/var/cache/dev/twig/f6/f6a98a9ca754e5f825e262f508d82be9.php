@@ -217,6 +217,6 @@ class __TwigTemplate_52c79f5f09523a57dbeb8e138a9a5a47 extends Template
         </section>
     </main>
 {% endblock %}
-", "courses/index.html.twig", "/var/www/html/templates/courses/index.html.twig");
+", "courses/index.html.twig", "/home/missaoui/eschool/file-rouge/app/templates/courses/index.html.twig");
     }
 }

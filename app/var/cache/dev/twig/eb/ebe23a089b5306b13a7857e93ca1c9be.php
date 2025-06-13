@@ -797,6 +797,6 @@ class __TwigTemplate_fe997e700e760eb2b92e089aaaccf0da extends Template
         </a>
     </div>
 {% endblock %}
-", "home/index.html.twig", "/var/www/html/templates/home/index.html.twig");
+", "home/index.html.twig", "/home/missaoui/eschool/file-rouge/app/templates/home/index.html.twig");
     }
 }

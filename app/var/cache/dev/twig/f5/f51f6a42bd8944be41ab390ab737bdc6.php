@@ -60,20 +60,22 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css\"/>
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css\">
+
+       
 
         ";
-        // line 10
+        // line 13
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 12
-        yield "        <link rel=\"stylesheet\" href=\"";
+        // line 15
+        yield "         <link rel=\"stylesheet\" href=\"";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/styles.css"), "html", null, true);
-        yield "\"/>
-
+        yield "?v=2.0\"/>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js\" defer></script>
         ";
-        // line 15
+        // line 17
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 18
+        // line 20
         yield "        <script src=\"";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/scripts.js"), "html", null, true);
         yield "\" defer></script>
@@ -81,23 +83,23 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
     <body>
 
         ";
-        // line 22
-        yield from $this->load("_partials/_header.html.twig", 22)->unwrap()->yield($context);
-        // line 23
+        // line 24
+        yield from $this->load("_partials/_header.html.twig", 24)->unwrap()->yield($context);
+        // line 25
         yield "        <main class=\"container\">
             ";
-        // line 24
+        // line 26
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 25
+        // line 27
         yield "        </main>
         ";
-        // line 26
-        yield from $this->load("_partials/_footer.html.twig", 26)->unwrap()->yield($context);
-        // line 27
+        // line 28
+        yield from $this->load("_partials/_footer.html.twig", 28)->unwrap()->yield($context);
+        // line 29
         yield "
     </body>
 </html>
-";
+ ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -130,7 +132,7 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         yield from [];
     }
 
-    // line 10
+    // line 13
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -143,7 +145,7 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 11
+        // line 14
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -154,7 +156,7 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         yield from [];
     }
 
-    // line 15
+    // line 17
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -167,7 +169,7 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 16
+        // line 18
         yield "
         ";
         
@@ -179,7 +181,7 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         yield from [];
     }
 
-    // line 24
+    // line 26
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -222,7 +224,7 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  183 => 24,  171 => 16,  158 => 15,  147 => 11,  134 => 10,  111 => 5,  97 => 27,  95 => 26,  92 => 25,  90 => 24,  87 => 23,  85 => 22,  77 => 18,  75 => 15,  68 => 12,  66 => 10,  58 => 5,  52 => 1,);
+        return array (  185 => 26,  173 => 18,  160 => 17,  149 => 14,  136 => 13,  113 => 5,  99 => 29,  97 => 28,  94 => 27,  92 => 26,  89 => 25,  87 => 24,  79 => 20,  77 => 17,  71 => 15,  69 => 13,  58 => 5,  52 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -235,11 +237,13 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css\"/>
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css\">
+
+       
 
         {% block stylesheets %}
         {% endblock %}
-        <link rel=\"stylesheet\" href=\"{{ asset('css/styles.css') }}\"/>
-
+         <link rel=\"stylesheet\" href=\"{{ asset('css/styles.css') }}?v=2.0\"/>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js\" defer></script>
         {% block javascripts %}
 
@@ -256,6 +260,6 @@ class __TwigTemplate_99c7b99fa4a91567405c05e558c465bc extends Template
 
     </body>
 </html>
-", "base.html.twig", "/var/www/html/templates/base.html.twig");
+ ", "base.html.twig", "/var/www/html/templates/base.html.twig");
     }
 }

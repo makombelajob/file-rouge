@@ -135,6 +135,6 @@ class __TwigTemplate_959ecfd50dd61da49f7f3120315142c2 extends Template
         </svg>
     </div>
 </footer>
-", "_partials/_footer.html.twig", "/var/www/html/templates/_partials/_footer.html.twig");
+", "_partials/_footer.html.twig", "/home/missaoui/eschool/file-rouge/app/templates/_partials/_footer.html.twig");
     }
 }

@@ -194,6 +194,6 @@ class __TwigTemplate_af6046114cec7301e72e3a95e0487736 extends Template
         </div>
     </div>
 </header>
-", "_partials/_header.html.twig", "/var/www/html/templates/_partials/_header.html.twig");
+", "_partials/_header.html.twig", "/home/missaoui/eschool/file-rouge/app/templates/_partials/_header.html.twig");
     }
 }
