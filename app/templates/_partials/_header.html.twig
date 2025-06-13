@@ -1,20 +1,24 @@
 <header class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center alert alert-success py-0">
         <!-- Logo -->
         <div class="col-3 col-lg-2">
             <a href="/">
                 <img src="{{ asset('images/logo.png') }}" alt="logo de e-school" class="img-fluid">
             </a>
         </div>
-        <!-- Barre de recherche (visible en mobile + desktop) -->
-        <div class="col-6 col-lg-2">
+        {# List à afficher en mode ordinateur (1024px) #}
+        <div class="d-none d-lg-flex col-lg-6 justify-content-center align-items-center gap-3 m-0">
+            {% include '_partials/_list_options.html.twig' %}
+        </div>
+        {# Barre de recherche (visible en mobile + desktop) #}
+        <div class="col-6 col-lg-4">
             <form class="d-flex">
                 <input class="form-control me-2" type="search" name="search" placeholder="Recherche...">
                 <button class="btn btn-primary" type="submit">🔍</button>
             </form>
         </div>
-
-        <!-- Burger menu (mobile only) -->
+        
+        {# Burger menu (mobile only) #}
         <div class="col-3 d-lg-none text-end">
             <button id="burger" class="btn border-0 bg-transparent" type="button" data-bs-toggle="collapse"
                     data-bs-target="#menu">
@@ -29,7 +33,7 @@
         </div>
 
         <!-- Menu complet (mobile collapsé, desktop affiché) -->
-        <div class="position-relative w-100">
+        <div class="position-relative">
             <div
                 class=" position-absolute top-0  w-100 bg-white z-3 collapse d-lg-flex justify-content-center mt-1 mt-lg-0 d-lg-none"
                 id="menu">
@@ -40,7 +44,7 @@
                     </li>
                     <li><a class="fs-4 text-decoration-none text-secondary" href="{{ path('app_register') }}">Signup</a>
                     </li>
-                    <li><a class="fs-4 text-decoration-none text-secondary" href="/#contact">Contact</a></li>
+                    <li><a class="fs-4 text-decoration-none text-secondary" href="{{ path('app_home') }}#contact">Contact</a></li>
                 </ul>
                 <div class="position-absolute top-0 left-0 w-100">
                     <button type="button" data-bs-toggle="collapse" class="btn-close" aria-label="Close"
