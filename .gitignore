@@ -1,5 +1,2 @@
 mysql
 .idea
-app/.env
-app/.env.dev
-app/.env.local
