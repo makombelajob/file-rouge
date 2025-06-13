@@ -122,12 +122,16 @@ class __TwigTemplate_93eccefee1408127ef6b97f0dd85ad3d extends Template
         // line 21
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 21, $this->source); })()), "content", [], "any", false, false, false, 21), "html", null, true);
         yield " exercices pratiques</li>
+\t\t\t\t\t<li class=\"list-group-item\">Price: <strong>";
+        // line 22
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 22, $this->source); })()), "price", [], "any", false, false, false, 22), "html", null, true);
+        yield "</strong> Euros</li>
 \t\t\t\t\t<li class=\"list-group-item\">Accès : Mobile & PC</li>
 \t\t\t\t\t<li class=\"list-group-item\">Certification incluse</li>
 \t\t\t\t</ul>
 \t\t\t\t<div class=\"my-3 text-center\">
 \t\t\t\t\t<a href=\"";
-        // line 26
+        // line 27
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         yield "\" class=\"btn btn-primary\" type=\"submit\">Inscrivez-vous !</a>
 \t\t\t\t</div>
@@ -137,8 +141,8 @@ class __TwigTemplate_93eccefee1408127ef6b97f0dd85ad3d extends Template
 
 \t<div class=\"container mt-4 shadow-sm\">
 \t\t";
-        // line 33
-        yield CoreExtension::getAttribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 33, $this->source); })()), "description", [], "any", false, false, false, 33);
+        // line 34
+        yield CoreExtension::getAttribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 34, $this->source); })()), "description", [], "any", false, false, false, 34);
         yield "
 \t</div>
 </main>
@@ -174,7 +178,7 @@ class __TwigTemplate_93eccefee1408127ef6b97f0dd85ad3d extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  141 => 33,  131 => 26,  123 => 21,  118 => 19,  105 => 9,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  145 => 34,  135 => 27,  127 => 22,  123 => 21,  118 => 19,  105 => 9,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -200,6 +204,7 @@ class __TwigTemplate_93eccefee1408127ef6b97f0dd85ad3d extends Template
 \t\t\t\t\t<li class=\"list-group-item\">Durée : {{ cours.duration }} Heures</li>
 \t\t\t\t\t<li class=\"list-group-item\">Langues : Français</li>
 \t\t\t\t\t<li class=\"list-group-item\">Contenu : {{ cours.content }} exercices pratiques</li>
+\t\t\t\t\t<li class=\"list-group-item\">Price: <strong>{{ cours.price }}</strong> Euros</li>
 \t\t\t\t\t<li class=\"list-group-item\">Accès : Mobile & PC</li>
 \t\t\t\t\t<li class=\"list-group-item\">Certification incluse</li>
 \t\t\t\t</ul>
