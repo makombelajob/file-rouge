@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20250613145627 extends AbstractMigration
+final class Version20250619095413 extends AbstractMigration
 {
     public function getDescription(): string
     {
@@ -22,6 +22,9 @@ final class Version20250613145627 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
             CREATE TABLE categories (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(50) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
+        SQL);
+        $this->addSql(<<<'SQL'
+            CREATE TABLE contacts (id INT AUTO_INCREMENT NOT NULL, email VARCHAR(255) NOT NULL, subject VARCHAR(100) NOT NULL, message LONGTEXT NOT NULL, send_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL COMMENT '(DC2Type:datetime_immutable)', PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
         $this->addSql(<<<'SQL'
             CREATE TABLE courses (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(50) NOT NULL, duration INT NOT NULL, created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL COMMENT '(DC2Type:datetime_immutable)', content INT NOT NULL, price INT NOT NULL, description LONGTEXT NOT NULL, document_link VARCHAR(150) NOT NULL, introduction LONGTEXT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
@@ -102,6 +105,9 @@ final class Version20250613145627 extends AbstractMigration
         SQL);
         $this->addSql(<<<'SQL'
             DROP TABLE categories
+        SQL);
+        $this->addSql(<<<'SQL'
+            DROP TABLE contacts
         SQL);
         $this->addSql(<<<'SQL'
             DROP TABLE courses

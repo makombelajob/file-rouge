@@ -1,10 +1,20 @@
 {% extends 'base.html.twig' %}
+{% block title %}Inscription{% endblock %}
 
-{% block title %}Register{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/register.js') }}" defer></script>
+{% endblock %}
+
 
 {% block body %}
-    <div class="alert alert-success">
-        <h1 class="text-center text-uppercase fs-1 my-3">Register</h1>
+    <div class="alert alert-success" id="inscription">
+        <h1 class="text-center text-uppercase fs-1 my-3">Inscription</h1>
 
         {{ form_errors(registrationForm) }}
         {{ form_start(registrationForm) }}
@@ -30,5 +40,10 @@
             <button type="submit" class="btn btn-success fs-4">Register</button>
         </div>
         {{ form_end(registrationForm) }}
+
+        <div class="text-center my-2">
+            <p>Vous avez déjà un compte ? </p>
+            <a href="{{ path('app_login') }}" class="btn btn-primary fs-4">Se connecter</a>
+        </div>
     </div>
 {% endblock %}
