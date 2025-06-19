@@ -9,12 +9,11 @@
 	<section  id="formation" class="container mt-4 p-4 shadow-sm">
 		<h1 class="text-center pb-5">Formation en développement {{ cours.title }}</h1>
 
-
 		<div class="row flex-column flex-md-row  mb-4">
 			
 
 			<div class="col-12 col-md-8 mb-4 py-5">
-				<img src="./assets/js-example.jpg" class="img-fluid rounded" alt="Exemple de formation JavaScript">
+				<img src="{{ asset('images/formations/' ~ cours.title ~ '_image.png') }}" class="img-fluid rounded" alt="Exemple de formation JavaScript">
 			</div>
 			<div id="details"  class="col-12 col-md-4">
 				<h2 class="text-start pb-2">Détails de la formation</h2>
@@ -44,7 +43,7 @@
 		</ul>
 
 
-				<div class="mt-4 text-center">
+				<div class="mt-4 text-center ">
 					<a href="{{ path('app_register')}}" class="btn p-2" type="submit">Inscrivez-vous !</a>
 				</div>
 			</div>
