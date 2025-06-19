@@ -6,6 +6,7 @@
     --second_color: #ebb217;
     --background: #F9F9F9;
     --third_color: #2917d0;
+    --header_color: #2a17d0a3;
 }
 
 img {
@@ -15,6 +16,8 @@ img {
 
 body {
     header {
+        background-color: var(--header_color);
+        margin-inline: 1rem  !important;
         #menu {
             position: absolute;
             top: 60px;
