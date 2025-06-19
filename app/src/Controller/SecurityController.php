@@ -14,7 +14,7 @@ class SecurityController extends AbstractController
     {
         $error = $authenticationUtils->getLastAuthenticationError();
         $lastUsername = $authenticationUtils->getLastUsername();
-        return $this->render('Security/login.html.twig', [
+        return $this->render('security/login.html.twig', [
             'last_username' => $lastUsername,
             'error' => $error,
         ]);
@@ -29,6 +29,6 @@ class SecurityController extends AbstractController
     #[Route(path: '/reset-password', name: 'app_reset_password')]
     public function resetPassword(): Response
     {
-        return $this->render('Security/reset_password.html.twig');
+        return $this->render('security/reset_password.html.twig');
     }
 }
