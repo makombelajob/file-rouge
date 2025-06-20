@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catalogue des Formations{% endblock %}
+
+{% block body %}
+
+<nav class="my-4 text-center">
+    <a href="{{ path('app_home') }}" class="btn btn-outline-dark mx-2">Accueil</a>
+    <a href="{{ path('app_profile') }}" class="btn btn-outline-secondary mx-2">Profil</a>
+    <a href="{{ path('app_admin') }}" class="btn btn-outline-primary mx-2">Admin</a>
+    <a href="{{ path('app_register') }}" class="btn btn-outline-success mx-2">S'inscrire</a>
+    <a href="{{ path('app_login') }}" class="btn btn-outline-info mx-2">Connexion</a>
+</nav>
+
+<main>
+    <h1 class="T_formation" style="text-align:center;">Apprenez les Langages Incontournables du Développement Web</h1>
+    <p class="P_formation" style="font-size:20px;">
+        Boostez votre carrière en tech avec nos formations complètes ! Apprenez à coder
+        efficacement en HTML, CSS, JavaScript, PHP, Java et Python. Que vous souhaitiez 
+        créer des sites web modernes, développer des applications ou automatiser des tâches,
+        nous avons tout ce qu'il vous faut pour réussir.
+    </p>
+
+    <section class="card container-fluid bg-secondary bg-opacity-25 p-5" style="width: 90%;">
+        <div class="row">
+            {% for formation in formations %}
+                <div class="col-12 col-md-4 mb-4">
+                    <article class="card-body text-center border-2 border-primary shadow rounded-4 bg-light">
+                        <h1 class="card-title" style="font-size:35px;">{{ formation.titre }}</h1>
+                        <h2 class="card-subtitle mb-2 text-primary" style="font-size: 25px;">{{ formation.sousTitre }}</h2>
+                        <img src="{{ asset(formation.image) }}" class="card-img-top rounded-3" alt="Formation_{{ formation.titre }}">
+                        <a href="{{ path('app_formation', {'id': formation.id}) }}" class="btn btn-primary mt-3 mb-3 w-50 fs-2 rounded-5">Voir Plus</a>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+
+<footer class="container mt-5 bg-secondary py-5">
+    <div class="row">
+        <!-- Tes SVG ou autre contenu de footer ici -->
+    </div>
+</footer>
+{% endblock %}
