@@ -103,6 +103,20 @@ main {
     }
 }
 
+
+/* formulaire de contact */
+
+   
+
+
+    h2.text-center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+
+
 footer {
     background-color: var(--background);
     border-radius: 12px;
@@ -147,6 +161,7 @@ footer {
 
     .text-muted {
         color: var(--principal_color) !important;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        font-style: italic;
     }
 }

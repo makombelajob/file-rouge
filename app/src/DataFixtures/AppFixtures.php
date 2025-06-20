@@ -92,10 +92,10 @@ class AppFixtures extends Fixture
                 'document_link' => 'https://e-school.fr/html.pdf',
                 'introduction' => '
                 <ul class="list-unstyled">
-                    <li class="fs-2 text-secondary-emphasis">Structure de base d\'une page web</li>
-                    <li class="fs-2 text-secondary-emphasis">Balises HTML, éléments de texte, liens, images</li>
-                    <li class="fs-2 text-secondary-emphasis">Formulaires et formulaires interactifs</li>
-                    <li class="fs-2 text-secondary-emphasis">SEO de base avec HTML</li>
+                    <li class="fs-4 text-secondary-emphasis">Structure de base d\'une page web</li>
+                    <li class="fs-4 text-secondary-emphasis">Balises HTML, éléments de texte, liens, images</li>
+                    <li class="fs-4 text-secondary-emphasis">Formulaires et formulaires interactifs</li>
+                    <li class="fs-4 text-secondary-emphasis">SEO de base avec HTML</li>
                 </ul>
                 
                 ',
@@ -146,7 +146,7 @@ class AppFixtures extends Fixture
                             <p>C\'est tout !</p>
                         </div>
 
-                        <div class="container mt-4 p-2 shadow-sm">
+                        <div class="container mt-4 p-3 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
                             <p>Notre formation est animée par Patrick Souvene, expert en CSS avec plus de 10 ans d\'expérience dans la création de sites web modernes et performants. Son approche pédagogique est centrée sur :</p>
 
@@ -160,11 +160,11 @@ class AppFixtures extends Fixture
                 'document_link' => 'https://e-school/css.pdf',
                 'introduction' => '
                 <ul class="list-unstyled">
-                    <li class="fs-2 text-secondary-emphasis">Mise en forme des éléments</li>
-                    <li class="fs-2 text-secondary-emphasis">Layouts (flexbox, grid, etc.)</li>
-                    <li class="fs-2 text-secondary-emphasis">Responsive et design adaptatif (mobile-first)</li>
-                    <li class="fs-2 text-secondary-emphasis">Animations et transitions CSS</li>
-                    <li class="fs-2 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
+                    <li class="fs-4 text-secondary-emphasis">Mise en forme des éléments</li>
+                    <li class="fs-4 text-secondary-emphasis">Layouts (flexbox, grid, etc.)</li>
+                    <li class="fs-4 text-secondary-emphasis">Responsive et design adaptatif (mobile-first)</li>
+                    <li class="fs-4 text-secondary-emphasis">Animations et transitions CSS</li>
+                    <li class="fs-4 text-secondary-emphasis">Préprocesseurs CSS (ex. : Sass ou LESS)</li>
                 </ul>
                 '
             ],
@@ -228,12 +228,12 @@ class AppFixtures extends Fixture
                 'document_link' => 'https://e-school/javascript.pdf',
                 'introduction' => '
                 <ul class="list-unstyled">
-                    <li class="fs-2 text-secondary-emphasis">Syntaxe de base, variables, fonctions, boucles</li>
-                    <li class="fs-2 text-secondary-emphasis">Manipulation du DOM (Document Object Model)</li>
-                    <li class="fs-2 text-secondary-emphasis">Événements et gestion des interactions
+                    <li class="fs-4 text-secondary-emphasis">Syntaxe de base, variables, fonctions, boucles</li>
+                    <li class="fs-4 text-secondary-emphasis">Manipulation du DOM (Document Object Model)</li>
+                    <li class="fs-4 text-secondary-emphasis">Événements et gestion des interactions
                                 utilisateurs
                     </li>
-                    <li class="fs-2 text-secondary-emphasis">Introduction aux frameworks JavaScript (ex. : React
+                    <li class="fs-4 text-secondary-emphasis">Introduction aux frameworks JavaScript (ex. : React
                                 ou Vue.js)
                     </li>
                 </ul>
@@ -298,9 +298,9 @@ class AppFixtures extends Fixture
                 'document_link' => 'https://e-school/python.pdf',
                 'introduction' => '
                 <ul class="list-unstyled">
-                    <li class="fs-2 text-secondary-emphasis">Python de base</li>
-                    <li class="fs-2 text-secondary-emphasis">Frameworks Python</li>
-                    <li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
+                    <li class="fs-4 text-secondary-emphasis">Python de base</li>
+                    <li class="fs-4 text-secondary-emphasis">Frameworks Python</li>
+                    <li class="fs-4 text-secondary-emphasis">Bibliothèques Python</li>
                 </ul>
                 '
             ],
@@ -363,9 +363,9 @@ class AppFixtures extends Fixture
                 'document_link' => 'https://e-school/php.pdf',
                 'introduction' => '
                 <ul class="list-unstyled">
-                    <li class="fs-2 text-secondary-emphasis">PHP de base</li>
-                    <li class="fs-2 text-secondary-emphasis">Bases de données avec PHP et MySQL</li>
-                    <li class="fs-2 text-secondary-emphasis">Frameworks PHP</li>
+                    <li class="fs-4 text-secondary-emphasis">PHP de base</li>
+                    <li class="fs-4 text-secondary-emphasis">Bases de données avec PHP et MySQL</li>
+                    <li class="fs-4 text-secondary-emphasis">Frameworks PHP</li>
                 </ul>
                 '
             ],
@@ -404,7 +404,7 @@ class AppFixtures extends Fixture
                             </div>
                         </div>
 
-                        <div class="container mt-4 shadow-sm">
+                        <div class="container mt-4 pb-2 shadow-sm">
                             <h2 class="p-2">Les prérequis de la formation</h2>
                             <ul>
                                 <li>Aucune connaissance préalable n\'est requise, nous commençons par les bases du Java !</li>
@@ -415,7 +415,7 @@ class AppFixtures extends Fixture
                             <p>C\'est tout !</p>
                         </div>
 
-                        <div class="container mt-4 p-2 shadow-sm">
+                        <div class="container mt-4 p-2 pb-2 shadow-sm">
                             <h2 class="p-2">Le Formateur</h2>
                             <p>Notre formation est animée par <strong class="text-secodary">Benjamin</strong> fenetre, expert en Java avec plus de 15 ans d\'expérience dans le développement d\'applications. Son approche pédagogique est centrée sur :</p>
 
@@ -429,9 +429,9 @@ class AppFixtures extends Fixture
                 'document_link' => 'https://e-school/symfony.pdf',
                 'introduction' => '
                 <ul class="list-unstyled">
-                    <li class="fs-2 text-secondary-emphasis">Introduction à Java</li>
-                    <li class="fs-2 text-secondary-emphasis">Programmation orientée objet (POO)</li>
-                    <li class="fs-2 text-secondary-emphasis">Spring Framework</li>
+                    <li class="fs-4 text-secondary-emphasis">Introduction à Java</li>
+                    <li class="fs-4 text-secondary-emphasis">Programmation orientée objet (POO)</li>
+                    <li class="fs-4 text-secondary-emphasis">Spring Framework</li>
                 </ul>
                 '
             ]
