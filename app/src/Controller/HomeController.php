@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Contacts;
 use App\Form\ContactsForm;
+use App\Repository\CategoriesRepository;
 use App\Repository\CoursesRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,14 +15,9 @@ use Symfony\Component\Routing\Attribute\Route;
 final class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(CoursesRepository $coursesRepository, Request $request, EntityManagerInterface $entityManager): Response
+    public function index(CategoriesRepository $categoriesRepository, Request $request, EntityManagerInterface $entityManager): Response
     {
-        $html = $coursesRepository->findOneBy(['title' => 'HTML']);
-        $css = $coursesRepository->findOneBy(['title' => 'CSS']);
-        $javascript = $coursesRepository->findOneBy(['title' => 'JAVASCRIPT']);
-        $python = $coursesRepository->findOneBy(['title' => 'PYTHON']);
-        $php = $coursesRepository->findOneBy(['title' => 'PHP']);
-        $java = $coursesRepository->findOneBy(['title' => 'JAVA']);
+        $categories = $categoriesRepository->findAll();
 
         $contact = new Contacts();
         $form = $this->createForm(ContactsForm::class, $contact);
@@ -32,6 +28,6 @@ final class HomeController extends AbstractController
 
             return $this->redirectToRoute('app_home');
         }
-        return $this->render('home/index.html.twig', compact('html', 'css', 'javascript', 'python', 'php', 'java', 'form'));
+        return $this->render('home/index.html.twig', compact('categories','form'));
     }
 }

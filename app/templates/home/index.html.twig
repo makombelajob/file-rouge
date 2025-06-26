@@ -48,12 +48,9 @@
 			<article class="col-md-5 card m-2">
 				<img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}" alt="Image de representation de l'ecole">
 				<div class="card-body">
-					<h2 class="card-title fs-4 text-center fw-semibold text-uppercase my-3">Votre avenir commence ici,
-																								                        avec eSchool.</h2>
+					<h2 class="card-title fs-4 text-center fw-semibold text-uppercase my-3">Votre avenir commence ici, avec eSchool.</h2>
 					<p class="card-content fs-5">Chez
-						<span class="text-uppercase fw-bolder">eSchool</span>, nous
-																												                        croyons que l’apprentissage doit être accessible, efficace et connecté au monde d’aujourd’hui.
-																												                        C’est pourquoi nous proposons des formations en ligne conçues pour s’adapter à votre rythme.
+						<span class="text-uppercase fw-bolder">eSchool</span>, nous croyons que l’apprentissage doit être accessible, efficace et connecté au monde d’aujourd’hui. C’est pourquoi nous proposons des formations en ligne conçues pour s’adapter à votre rythme.
 					</p>
 					<div class="text-center">
 						<a href="{{ path('app_about') }}" class="btn btn-primary fs-4">Savoir Plus</a>
@@ -64,11 +61,10 @@
 
 				<img class="card-img-top" src="{{ asset('images/image_du_slide_2.jpeg') }}" alt="Image catalogue de l'ecole">
 				<div class="card-body">
-					<h2 class="card-title fs-4 text-center fw-semibold text-uppercase my-3">Pourquoi choisir eSchool
-																								                        ?</h2>
+					<h2 class="card-title fs-4 text-center fw-semibold text-uppercase my-3">Pourquoi choisir eSchool?</h2>
 					<p class="card-content fs-5">
 						<span class="text-uppercase fw-bolder">eSchool</span>, c’est une équipe
-												 dédiée à votre réussite. Nous croyons fermement que l’éducation doit être adaptée aux besoins du monde moderne, tout en restant accessible à toutes et à tous.</p>
+							dédiée à votre réussite. Nous croyons fermement que l’éducation doit être adaptée aux besoins du monde moderne, tout en restant accessible à toutes et à tous.</p>
 					<div class="text-center">
 						<a href="{{ path('app_about') }}" class="btn btn-primary fs-4">Savoir Plus</a>
 					</div>
@@ -125,59 +121,32 @@
 	<section>
 		<h2 class="fs-1 text-uppercase text-center my-3">Nos formations Frontend et Backend</h2>
 		<div class="row">
-			<h3 class="fs-3 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations Frontend</h3>
 			<h4 class="fs-4 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
-			<p class="fs-5">Maîtriser les bases du développement web pour créer des sites web interactifs et
-																                responsives.</p>
+			<p class="fs-5">Maîtriser les bases du développement web pour créer des sites web interactifs et responsives.</p>
 			<h5 class="fs-4 text-info-emphasis my-3 fw-semibold">Contenu de la formation</h5>
 			<div class="row justify-content-between">
+			{% for category in categories %}
+			<h3 class="fs-3 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations {{ category.name }}</h3>
+				{% for course in category.courses %}
+				
 				<article class="col-md card m-2">
 					<svg class="m-auto my-3" width="150px" height="150px">
-						<use xlink:href="{{ asset('images/sprites.svg') }}#html"></use>
+						<use xlink:href="{{ asset('images/sprites.svg') }}#{{ course.title|lower }}"></use>
 					</svg>
 					<div class="card-body">
-						<h2 class="card-title fs-1 text-uppercase fw-bolder">
-							<strong class="text-primary">{{ html.title }}
-							</strong>(Hypertext Markup Language)</h2>
-						{{ html.introduction | raw }}
 						<div class="text-center">
-							<a href="{{ path('app_formation', {id:html.id}) }}" class="btn btn-primary fs-4">Savoir
-																																                                plus</a>
+							<h2 class="card-title fs-1 text-uppercase fw-bolder">
+								<strong class="text-primary fs-3">{{ course.title }}
+								</strong></h2>
+							<div class="text-center">
+								<a href="{{ path('app_formation', {id:course.id}) }}" class="btn btn-primary fs-4">Savoir plus</a>
+							</div>
 						</div>
 					</div>
 				</article>
-				<article class="col-md card m-2">
-					<svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
-						<use xlink:href="{{ asset('images/sprites.svg') }}#css"></use>
-					</svg>
-					<div class="card-body">
-						<h2 class="card-title fs-1 text-uppercase fw-bolder">
-							<strong class="text-primary">{{ css.title }}
-							</strong>
-							(Cascading Style Sheets)</h2>
-
-						{{ css.introduction | raw }}
-						<div class="text-center">
-							<a href="{{ path('app_formation', {id:css.id}) }}" class="btn btn-primary fs-4">Savoir
-																																                                plus</a>
-						</div>
-					</div>
-				</article>
-				<article class="col-md card m-2">
-					<svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
-						<use xlink:href="{{ asset('images/sprites.svg') }}#js"></use>
-					</svg>
-					<div class="card-body">
-						<h2 class="card-title fs-1 text-uppercase fw-bolder">
-							<strong class="text-primary">{{ javascript.title }}
-							</strong>
-						</h2>
-						{{ javascript.introduction | raw }}
-						<div class="text-center">
-							<a href="{{ path('app_formation', {id:javascript.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
-						</div>
-					</div>
-				</article>
+			
+				{% endfor %}
+			{% endfor %}
 			</div>
 		</div>
 		<div class="row">
@@ -186,6 +155,7 @@
 			<p class="fs-5">Comprendre, Maîtriser les fondamentaux dans le développement backend</p>
 			<h5 class="fs-4 text-info-emphasis my-3 fw-semibold">Contenu de la formation</h5>
 			<div class="row justify-content-between">
+			{#
 				<article class="col-md card m-2">
 					<svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
 						<use xlink:href="{{ asset('images/sprites.svg') }}#java"></use>
@@ -232,7 +202,7 @@
 							<a href="{{ path('app_formation', {id:python.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
 						</div>
 					</div>
-				</article>
+				</article>#}
 			</div>
 		</div>
 	</section>

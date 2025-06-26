@@ -456,6 +456,8 @@ class AppFixtures extends Fixture
         foreach ($categories as $category) {
             $categoryEntity = new Categories();
             $categoryEntity->setName($category['name']);
+
+            $manager->persist($categoryEntity);
         }
         $manager->flush();
     }
