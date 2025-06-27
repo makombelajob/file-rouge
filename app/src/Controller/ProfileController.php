@@ -7,6 +7,7 @@ use App\Entity\Status;
 use App\Repository\CoursesRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\Orders;
+use App\Service\EmailService;
 use Stripe\Stripe;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -17,7 +18,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 final class ProfileController extends AbstractController
 {
-    #[Route('/profile', name: 'app_profile')]  
+    #[Route('/profile', name: 'app_profile')]
     public function index(CoursesRepository $coursesRepository): Response
     {
         $this->denyAccessUnlessGranted('ROLE_USER');
@@ -26,7 +27,7 @@ final class ProfileController extends AbstractController
     }
 
     #[Route('/achat-du-cours/{id}', name: 'app_payment')]
-    public function payement(EntityManagerInterface $entityManager, Courses $cours):Response
+    public function payement(EntityManagerInterface $entityManager, Courses $cours): Response
     {
         $this->denyAccessUnlessGranted('ROLE_USER');
 
@@ -73,8 +74,24 @@ final class ProfileController extends AbstractController
     }
 
     #[Route('/payment/success', name: 'payment_success')]
-    public function success(): Response
+    public function success(EmailService $emailService): Response
     {
+
+/** @var Users $user */
+        $user = $this->getUser();
+
+        if ($user) {
+            $emailService->send(
+                'admin@textcool.fr',
+                $user->getEmail(),
+                'Merci pour votre achat !',
+                'confirmation_cours',
+                [
+                    'username' => $user->getLastname()
+                ]
+            );
+        }
+
         return $this->render('profile/success.html.twig');
     }
 
