@@ -121,12 +121,12 @@
 	<section>
 		<h2 class="fs-1 text-uppercase text-center my-3">Nos formations Frontend et Backend</h2>
 		<div class="row">
+			{% for category in categories %}
+			<h3 class="fs-3 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations {{ category.name }}</h3>
 			<h4 class="fs-4 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
 			<p class="fs-5">Maîtriser les bases du développement web pour créer des sites web interactifs et responsives.</p>
 			<h5 class="fs-4 text-info-emphasis my-3 fw-semibold">Contenu de la formation</h5>
 			<div class="row justify-content-between">
-			{% for category in categories %}
-			<h3 class="fs-3 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations {{ category.name }}</h3>
 				{% for course in category.courses %}
 				
 				<article class="col-md card m-2">
@@ -147,62 +147,6 @@
 			
 				{% endfor %}
 			{% endfor %}
-			</div>
-		</div>
-		<div class="row">
-			<h3 class="fs-1 fw-semibold my-3 text-uppercase text-primary-emphasis">Formations Backend</h3>
-			<h4 class="fs-3 my-2 fw-semibold text-secondary">Objectif de la formation :</h4>
-			<p class="fs-5">Comprendre, Maîtriser les fondamentaux dans le développement backend</p>
-			<h5 class="fs-4 text-info-emphasis my-3 fw-semibold">Contenu de la formation</h5>
-			<div class="row justify-content-between">
-			{#
-				<article class="col-md card m-2">
-					<svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
-						<use xlink:href="{{ asset('images/sprites.svg') }}#java"></use>
-					</svg>
-					<div class="card-body">
-						<h2 class="card-title fs-1 text-uppercase fw-bolder">
-							<strong class="text-primary">{{ java.title }}
-							</strong>
-						</h2>
-						{{ java.introduction | raw }}
-						<div class="text-center">
-							<a href="{{ path('app_formation', {id:java.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
-						</div>
-					</div>
-				</article>
-				<article class="col-md card m-2">
-					<svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
-						<use xlink:href="{{ asset('images/sprites.svg') }}#php"></use>
-					</svg>
-					<div class="card-body">
-						<h2 class="card-title fs-1 text-uppercase fw-bolder">
-							<strong class="text-primary">{{ php.title }}</strong>
-							de base</h2>
-						{{ php.introduction | raw }}
-						<div class="text-center">
-							<a href="{{ path('app_formation', {id:php.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
-						</div>
-					</div>
-				</article>
-				<article class="col-md card m-2">
-					<svg class="m-auto my-3" xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
-						<use xlink:href="{{ asset('images/sprites.svg') }}#python"></use>
-					</svg>
-					<div class="card-body">
-						<h2 class="card-title fs-1 text-uppercase fw-bolder">
-							<strong class="text-primary fs-3">{{ python.title }}</strong>
-						</h2>
-						<ul class="list-unstyled">
-							<li class="fs-2 text-secondary-emphasis">Python de base</li>
-							<li class="fs-2 text-secondary-emphasis">Frameworks Python</li>
-							<li class="fs-2 text-secondary-emphasis">Bibliothèques Python</li>
-						</ul>
-						<div class="text-center">
-							<a href="{{ path('app_formation', {id:python.id})}}" class="btn btn-primary fs-4">Savoir plus</a>
-						</div>
-					</div>
-				</article>#}
 			</div>
 		</div>
 	</section>

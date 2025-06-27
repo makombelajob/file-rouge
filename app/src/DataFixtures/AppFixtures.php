@@ -450,8 +450,8 @@ class AppFixtures extends Fixture
         }
 
         $categories = [
+            ['name' => 'Font-End'],
             ['name' => 'Back-End'],
-            ['name' => 'Front-End'],
         ];
         foreach ($categories as $category) {
             $categoryEntity = new Categories();
